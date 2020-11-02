@@ -60,3 +60,44 @@
   - How to do unit testing
   - How to write testable code
   - How to design workflows that shorten development cycles etc ...
+
+## Existing Technology (`Mathew`)
+
+- Linux Kernel
+
+  - Extremely large; contains about 27.8 million lines of code
+  - Code is complicated since it supports a large variety of architecturally dependent devices
+  - Compiling takes a long time - about 1 hour
+
+- Windows Research Kernel
+
+  - Not open source
+  - Difficult to get access
+    - Needs to register through University
+  - Outdated - Not in development
+
+    - Based on older windows XP / Server 2003 code ; Therefore outdated
+
+  - Minix microkernel
+
+    - The best introductory kernel out of all the ones mentioned here
+    - Developed by Andrew S. Tanenbaum  
+      (Fun Fact: If the name sounds familiar it's because he authored our computer networks textbook)
+    - However, the kernel has a micro-kernel design instead of the familiar monolithic kernel
+      - Traditional unix based kernels (eg: linux) follow monolithic design
+      - This has led to the famous [Tanenbaum–Torvalds debate](https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate).
+      - Explain [micro-kernel](https://en.wikipedia.org/wiki/Microkernel) & [monolithic kernel](https://en.wikipedia.org/wiki/Monolithic_kernel)
+
+  - Redox
+
+    - Similar to MINIX (based on microkernel design)
+    - Written in Rust programming language
+      - Rust is a systems programming language with guaranteed safety
+    - Has all the disadvantage of MINIX
+    - Additionally students have to learn the Rust Programming language
+
+  - Proposed System
+    - The system we propose will be written primarily in C; a language that is familiar to all undergraduate students
+    - It will have a monolithic design; so that the knowledge and experience gained by tinkering with out project can directly translate when the student starts to play with the Linux kernel
+    - Open source
+    - Plenty of documentation
