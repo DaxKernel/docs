@@ -101,3 +101,62 @@
     - It will have a monolithic design; so that the knowledge and experience gained by tinkering with out project can directly translate when the student starts to play with the Linux kernel
     - Open source
     - Plenty of documentation
+
+## Requirements (`Midhun`)
+
+- End user
+
+  - Since we're developing a kernel/OS, the requirements for the end user is verey minimal
+  - The primary requirement is that the user has a Intel/AMD CPU with atleast 1 GB of RAM.
+  - We also assume that the user has basic interface devices such as monitor, keyboard and mouse.
+  - Disk space of 5GB is recommended
+
+- Developer
+
+  - Since the primary purpose of this project is to provide a minimal kernel that students can use to learn kernel development it makes sense to also state the requirements for developing the project.
+  - This is a little more complicated
+
+  - Requirements are:
+
+    - Linux based distro
+
+      - A stable linux distribution is recommended since most tools used for os-dev are written with POSIX compliance.
+      - Previously, if you wanted to use Windows as your developer environment, you had to use cygwin and lot of hacks.
+      - A lot has changed since 2020, this is not as strict of a requirement because of Windows Subsystem for Linux fully supports binutils and GCC.
+
+    - Binutils
+
+      - This include GNU Linker and Assembler
+      - You have to download and compile them
+      - Little involved; since some dependencies have to be installed as well
+
+    - GCC Cross Compiler
+
+      - When we normally compile a C/C++ program using GCC, the binary produced is for the system with which we compile.
+      - During kernel development, we need to target another system architecture
+      - This requires a Cross Compiler
+      - Like with binutils, we need to download source code, install dependencies and compile the cross-compiler
+
+    - GRUB
+
+      - Once we have a kernel, we need a bootloader to load the kernel into main memory and branch to entry point of our kernel
+      - Developing a custom bootloader is as big a project as developing a kernel
+      - Therefore, we instead chose to use the GRUB Bootloader
+      - Additionally GRUB also contains tools to verify multiboot
+
+    - Virtual Machine
+
+      - We heavily use code-build-debug cycle
+      - It's not practical to actually install the kernel to a usb and to reboot into it every time we need to debug
+      - So for convenience, we will use a virtual machine
+      - We've used qemu - since its fast and can be operated easily from the terminal
+
+    - Source Control
+
+      - We use git
+      - Main remote repo is hosted on Github
+      - We also plan to backup the repo to Gitlab just for safety
+
+    - Communication Platform
+      - We are all at home; so we use discord to collaborate
+      - We have Github integration with discord

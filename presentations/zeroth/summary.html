@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>summary.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="zeroth-presentation-speaker-notes">Zeroth Presentation Speaker Notes</h1>
+<h2 id="introduction-nihal">Introduction (<code>Nihal</code>)</h2>
+<ul>
+<li>
+<p>We want to build a 32-bit operating system/ kernel</p>
+</li>
+<li>
+<p>We will use the C programming language and x86 assembly</p>
+<ul>
+<li>The reasoning behind why we did not choose a modern programming language like Rust will be explained in the later slides.</li>
+</ul>
+</li>
+<li>
+<p>Our three basic goals are:</p>
+<h3 id="1-implement-display">1. Implement Display</h3>
+<ul>
+<li>This involves printing text to the screen and drawing geometric shapes such as squares, triangles and so on ...</li>
+<li>Drawing text to the screen</li>
+<li>In our current design, we are using VGA text-mode and graphics-mode.<br>
+This involves writing 2 bytes to memory location <em>0xB8000</em> to represent a character.</li>
+</ul>
+<h3 id="2-input-drivers">2. Input Drivers</h3>
+<ul>
+<li>This involves implementing both keyboard and mouse drivers from scratch.</li>
+<li>Implementing keyboard driver involves reading scan codes from the PS/2 controller</li>
+<li>Implementing mouse driver involves handling interrupts</li>
+</ul>
+<h3 id="3-c-standard-library">3. C standard library</h3>
+<ul>
+<li>The functions that we take for granted - like strlen and printf, scanf, malloc are
+all parts of the C standard library.</li>
+<li>They are not provided by the compiler.</li>
+<li>It is upto the kernel to provide these libraries</li>
+<li>We will implement some parts of the stdlib (like string.h and malloc function)</li>
+</ul>
+</li>
+<li>
+<p>Since it is not really practical, we will exclude things like networking.</p>
+</li>
+</ul>
+<h2 id="motivation-antony">Motivation (<code>Antony</code>)</h2>
+<ul>
+<li>
+<p>Writing low level code is hard and we wanted to do something <strong>hard</strong>.</p>
+<ul>
+<li><em>Illustrate the difficulty by mentioning the steps needed to setup a compiler</em>:
+<ol>
+<li>First install 8 different dependencies.</li>
+<li>Download and <strong>compile</strong> binutils (for GNU linker and assembler).</li>
+<li>Download and <strong>compile</strong> GCC as a cross-compiler.</li>
+<li>Get a bootloader (eg: GRUB).</li>
+<li>Write custom linker script.</li>
+<li>Build a bootable image of your kernel.</li>
+<li>Now you have a clean slate. No printing, no keyboard, no mouse functionality.</li>
+</ol>
+</li>
+<li>Makes you appreciate the built-in abstractions.<br>
+Example:
+<ul>
+<li>We call a function and text magically appears on the screen</li>
+<li>When the user presses a key, an event is triggered</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>We want this project to be used in conjunction with Operating System classes (CS204).</p>
+<ul>
+<li>Students end up having a good theoretical understanding but have no idea how to implement the concepts in code.</li>
+<li>Students can examine the codebase to understand how the concepts are implemented.</li>
+<li>This can encourage to students to contribute code to linux kernel and other open source projects.</li>
+</ul>
+</li>
+<li>
+<p>Additionally we want students to understand how to write clean code and design good system architectures.</p>
+</li>
+<li>
+<p>Students can also be introduced to basic concepts of devOps such as:</p>
+<ul>
+<li>How to use source control and proper ettiquettes to follow when commiting and so on ...</li>
+<li>How to do unit testing</li>
+<li>How to write testable code</li>
+<li>How to design workflows that shorten development cycles etc ...</li>
+</ul>
+</li>
+</ul>
+<h2 id="existing-technology-mathew">Existing Technology (<code>Mathew</code>)</h2>
+<ul>
+<li>
+<p>Linux Kernel</p>
+<ul>
+<li>Extremely large; contains about 27.8 million lines of code</li>
+<li>Code is complicated since it supports a large variety of architecturally dependent devices</li>
+<li>Compiling takes a long time - about 1 hour</li>
+</ul>
+</li>
+<li>
+<p>Windows Research Kernel</p>
+<ul>
+<li>
+<p>Not open source</p>
+</li>
+<li>
+<p>Difficult to get access</p>
+<ul>
+<li>Needs to register through University</li>
+</ul>
+</li>
+<li>
+<p>Outdated - Not in development</p>
+<ul>
+<li>Based on older windows XP / Server 2003 code ; Therefore outdated</li>
+</ul>
+</li>
+<li>
+<p>Minix microkernel</p>
+<ul>
+<li>The best introductory kernel out of all the ones mentioned here</li>
+<li>Developed by Andrew S. Tanenbaum<br>
+(Fun Fact: If the name sounds familiar it's because he authored our computer networks textbook)</li>
+<li>However, the kernel has a micro-kernel design instead of the familiar monolithic kernel
+<ul>
+<li>Traditional unix based kernels (eg: linux) follow monolithic design</li>
+<li>This has led to the famous <a href="https://en.wikipedia.org/wiki/Tanenbaum%E2%80%93Torvalds_debate">Tanenbaum–Torvalds debate</a>.</li>
+<li>Explain <a href="https://en.wikipedia.org/wiki/Microkernel">micro-kernel</a> &amp; <a href="https://en.wikipedia.org/wiki/Monolithic_kernel">monolithic kernel</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Redox</p>
+<ul>
+<li>Similar to MINIX (based on microkernel design)</li>
+<li>Written in Rust programming language
+<ul>
+<li>Rust is a systems programming language with guaranteed safety</li>
+</ul>
+</li>
+<li>Has all the disadvantage of MINIX</li>
+<li>Additionally students have to learn the Rust Programming language</li>
+</ul>
+</li>
+<li>
+<p>Proposed System</p>
+<ul>
+<li>The system we propose will be written primarily in C; a language that is familiar to all undergraduate students</li>
+<li>It will have a monolithic design; so that the knowledge and experience gained by tinkering with out project can directly translate when the student starts to play with the Linux kernel</li>
+<li>Open source</li>
+<li>Plenty of documentation</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="requirements-midhun">Requirements (<code>Midhun</code>)</h2>
+<ul>
+<li>
+<p>End user</p>
+<ul>
+<li>Since we're developing a kernel/OS, the requirements for the end user is verey minimal</li>
+<li>The primary requirement is that the user has a Intel/AMD CPU with atleast 1 GB of RAM.</li>
+<li>We also assume that the user has basic interface devices such as monitor, keyboard and mouse.</li>
+<li>Disk space of 5GB is recommended</li>
+</ul>
+</li>
+<li>
+<p>Developer</p>
+<ul>
+<li>
+<p>Since the primary purpose of this project is to provide a minimal kernel that students can use to learn kernel development it makes sense to also state the requirements for developing the project.</p>
+</li>
+<li>
+<p>This is a little more complicated</p>
+</li>
+<li>
+<p>Requirements are:</p>
+<ul>
+<li>
+<p>Linux based distro</p>
+<ul>
+<li>A stable linux distribution is recommended since most tools used for os-dev are written with POSIX compliance.</li>
+<li>Previously, if you wanted to use Windows as your developer environment, you had to use cygwin and lot of hacks.</li>
+<li>A lot has changed since 2020, this is not as strict of a requirement because of Windows Subsystem for Linux fully supports binutils and GCC.</li>
+</ul>
+</li>
+<li>
+<p>Binutils</p>
+<ul>
+<li>This include GNU Linker and Assembler</li>
+<li>You have to download and compile them</li>
+<li>Little involved; since some dependencies have to be installed as well</li>
+</ul>
+</li>
+<li>
+<p>GCC Cross Compiler</p>
+<ul>
+<li>When we normally compile a C/C++ program using GCC, the binary produced is for the system with which we compile.</li>
+<li>During kernel development, we need to target another system architecture</li>
+<li>This requires a Cross Compiler</li>
+<li>Like with binutils, we need to download source code, install dependencies and compile the cross-compiler</li>
+</ul>
+</li>
+<li>
+<p>GRUB</p>
+<ul>
+<li>Once we have a kernel, we need a bootloader to load the kernel into main memory and branch to entry point of our kernel</li>
+<li>Developing a custom bootloader is as big a project as developing a kernel</li>
+<li>Therefore, we instead chose to use the GRUB Bootloader</li>
+<li>Additionally GRUB also contains tools to verify multiboot</li>
+</ul>
+</li>
+<li>
+<p>Virtual Machine</p>
+<ul>
+<li>We heavily use code-build-debug cycle</li>
+<li>It's not practical to actually install the kernel to a usb and to reboot into it every time we need to debug</li>
+<li>So for convenience, we will use a virtual machine</li>
+<li>We've used qemu - since its fast and can be operated easily from the terminal</li>
+</ul>
+</li>
+<li>
+<p>Source Control</p>
+<ul>
+<li>We use git</li>
+<li>Main remote repo is hosted on Github</li>
+<li>We also plan to backup the repo to Gitlab just for safety</li>
+</ul>
+</li>
+<li>
+<p>Communication Platform</p>
+<ul>
+<li>We are all at home; so we use discord to collaborate</li>
+<li>We have Github integration with discord</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</body>
+</html>
