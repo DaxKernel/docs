@@ -1,4 +1,5 @@
 ## **INITIAL RESOURCES**
+---
 
 #### 1. **Bare Bones** --> (https://wiki.osdev.org/Bare_Bones)
 
