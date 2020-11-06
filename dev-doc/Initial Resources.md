@@ -19,8 +19,8 @@ Makefiles are used to manage our build system.
 4.**#### X86 Assembly** --> (http://download.savannah.gnu.org/releases/pgubook/)
 A book on X86 Assembly.
 
-5.**#### Volatile Keyboard** --> (https://www.embedded.com/introduction-to-the-volatile-keyword/)
-An introduction to volatile keyboard.
+5.**#### Volatile Keyword** --> (https://www.embedded.com/introduction-to-the-volatile-keyword/)
+An introduction to volatile keyword.
 
 6.**#### Function Attributes** --> (https://gcc.gnu.org/onlinedocs/gcc-3.2/gcc/Function-Attributes.html)
 A page on how to declare attributes of functions.
