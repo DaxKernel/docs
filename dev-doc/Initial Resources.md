@@ -12,12 +12,9 @@ The first step in creating your own operating system;an example of how to create
 Driver code for keyboard(AT and PS/2 keyboard driver) and driver code for mouse(PS/2 mouse driver).
 ```
 
-3.**#### Makefiles** --> (https://makefiletutorial.com/),(https://endler.dev/2017/makefiles/)  
- A Makefile consists of a set of rules. A rule generally looks like this:
-targets : prerequisites
-command
-command
-command
+3.**#### Makefiles** --> (https://makefiletutorial.com/),(https://endler.dev/2017/makefiles/)
+
+Makefiles are used to manage our build system.
 
 4.**#### X86 Assembly** --> (http://download.savannah.gnu.org/releases/pgubook/)
 A book on X86 Assembly.
