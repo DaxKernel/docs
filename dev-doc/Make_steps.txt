@@ -1,0 +1,8 @@
+Installing headers
+
+We have two directories : kernel and libc (See dir.md)
+We use make to install our headers into sysroot/usr/include 
+
+For both directories, make install-headers performs:
+step 1) Create directory sysroot/usr/include if it does not exist
+step 2) Copy everything from include folder to sysroot/usr/include
