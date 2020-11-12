@@ -1,4 +1,5 @@
 Installing headers
+--------------------
 
 We have two directories : kernel and libc (See dir.md)
 We use make to install our headers into sysroot/usr/include 
@@ -6,3 +7,32 @@ We use make to install our headers into sysroot/usr/include
 For both directories, make install-headers performs:
 step 1) Create directory sysroot/usr/include if it does not exist
 step 2) Copy everything from include folder to sysroot/usr/include
+
+The actual compilation is done by executing make install on each of the 
+previously mentioned directories:
+This is a little more complicated than installing the headers.
+You must be familiar with the variables used. (see shellscript.md)
+Additionally you also need to be familiar with make. Use the resources 
+in Initial_Resources.md
+
+Make install on /kernel directory
+--------------------
+The make install command further calls two sub commands:
+    1. make install-headers 
+    2. make install-kernel
+
+Sub-command 1 has been described in previous section.
+
+install-kernel requires DaxOS.kernel to proceed -->
+DaxOS.kernel requires OBJS and arch/i386/linker.ld to proceed -->
+    where OBJS is [crti.o crtbegin.o crtend.o ...kernel.o ...]
+the .o files require .c or .S files with same name
+    These are available in the directory :)
+    So compile .c files and .S files  to .o files
+With these .o files, make will produce DaxOS.kernel by linking them
+together
+Then it is confirmed that multiboot is properly working
+
+Now install kernel proceeds by:
+    step 1: create sysroot/boot directory if it does not exist
+    step 2: copy DaxOS.kernel to sysroot/boot directory
