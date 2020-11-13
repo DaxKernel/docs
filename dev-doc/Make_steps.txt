@@ -33,6 +33,27 @@ With these .o files, make will produce DaxOS.kernel by linking them
 together
 Then it is confirmed that multiboot is properly working
 
-Now install kernel proceeds by:
+Now install-kernel proceeds by:
     step 1: create sysroot/boot directory if it does not exist
     step 2: copy DaxOS.kernel to sysroot/boot directory
+
+
+Make install on /libc directory
+--------------------
+This will call two sub-commands:
+    1. make install-headers
+    2. make install-libs
+
+Sub-command 1 has been described in previous section.
+
+install-libs require libk.a file as prerequisite. 
+.a files are archive files (like a zip or tar file). In fact you can open .a files to find a collection .c implementation files.
+
+libk.a requires the items in LIBK_OBJS as prerequisite. LIBK_OBJS contains the items in FREEOBJS but with the ending .o replaced
+by .libk.o.
+
+The .libk.o files require .c/.S files as prerequisite. This is available. Therefore the .c/.S files are compiled by GCC to 
+.libk.o files. Now libk.a can be produced by using GNU ar to combine all the .libk.o files into an archive.
+Now install-libs can proceeds by:
+    step 1: create sysroot/usr/lib directory if it does not exist
+    step 2: copy the libk.a file to sysroot/usr/lib directory
