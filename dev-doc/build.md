@@ -4,10 +4,10 @@
 
 The following steps illustrate the build process:
 
-1. Initially we call ./build.sh
-2. ./build.sh calls ./header.sh
-3. ./header.sh calls ./config.sh
-4. config.sh shell script sets bash variables as follows:
+1. Initially we call `./build.sh`
+2. `./build.sh` calls `./header.sh`
+3. `./header.sh` calls `./config.sh`
+4. `./config.sh` shell script sets bash variables as follows:
    - MAKE = make
    - HOST = i686-elf
    - AR = i686-elf-ar
@@ -21,15 +21,15 @@ The following steps illustrate the build process:
    - CC = i686-elf-gcc "sysroot=SYSROOT"
    - SYSTEM_HEADER_PROJECTS ="libc kernel"
    - PROJECTS = "libc kernel"
-5. Now ./header.sh proceeds
-6. In the ./header.sh
+5. Now `./header.sh` proceeds
+6. In the `./header.sh`
    - sysroot folder is created if it does not exist
    - For each folder in SYSTEM_HEADER_PROJECTS as PROJECT, the following steps are executed:
      - PROJECT dir is opened
      - DESTDIR is set as ../../sysroot
      - make install-headers is called on the PROJECT directory
-7. We return to ./build.sh, which proceeds as follows
-8. In the ./build.sh
+7. We return to `./build.sh`, which proceeds as follows
+8. In the `./build.sh`
    - For each folder in PROJECTS as PROJECT, the following steps are executed:
      - PROJECT dir is opened
      - DESTDIR is set as ../../sysroot
