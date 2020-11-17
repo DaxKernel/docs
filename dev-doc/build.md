@@ -1,3 +1,7 @@
+## Understanding the build process
+
+---
+
 The following steps illustrate the build process:
 
 1. Initially we call ./build.sh
