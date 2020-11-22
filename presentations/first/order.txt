@@ -1,0 +1,8 @@
+Presentation Order
+-----
+Recap + Kernel Architecture - Nihal
+Build Process + GNU MAKE example - Antony 
+Use Case Diagram + Activity Diagram  - Mathew 
+Sequence Diagram - Midhun 
+Modules - Midhun
+Implementation plans - Midhun
