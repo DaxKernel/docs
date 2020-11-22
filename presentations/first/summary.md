@@ -119,16 +119,16 @@ This involves:
 The concept behind interrupts is quite simple. When a piece of hardware or software wants to interrupt the CPU to do something important, an interrupt is raised. The CPU executes a program called the ISR (Interrupt Service Routine) and returns back to what is was doing before.
 In order to set up interrupts the following steps have to be done at boot:
 
-1.  **Create the IDT (Interrupt Descriptor Table)**
+1.  **Create the IDT (Interrupt Descriptor Table)**  
     This table instructs the Programmable Interrupt Controller where to find the ISR for each type of interrupt.
     This is implemented in C as an array of structs.
 
-2.  **Remapping the PIC**
+2.  **Remapping the PIC**  
     After boot we are in protected mode. Here some of our interrupts conflict with each other.
     In order to prevent this we will need to remap our PIC. This is done by first sending Initialization Command Words (ICW) to the input port 0x20 and
     then sending the vector offsets to port 0x21.
 
-3.  **Filling the IDT**
+3.  **Filling the IDT**  
     The IDT table is filled with the address of each ISR.
 
 ### 2. Loading VGA driver
@@ -145,7 +145,7 @@ There are two objectives here:
 
     In VGA text-mode we can print a maximum of 80x25 characters on the screen at one time.
 
-2.  **Drawing on the screen**
+2.  **Drawing on the screen**  
     This is accomplished by using VGA Graphics mode. Now we can plot pixels by writing to memory location 0xA0000.
     The maximum resolution supported is 640x480 pixels with 16 bit color support.
 
@@ -153,10 +153,10 @@ There are two objectives here:
 
 There are two design choices for the implementation of the keyboard driver:
 
-1. **Polling Driven**
+1. **Polling Driven**  
    In Polling, the CPU keeps checking the status of the PS/2 keyboard constantly to detect a keypress.
 
-2. **Interrupt Driven**
+2. **Interrupt Driven**  
    When the user presses a key, the keyboard driver generates an interrupt which causes the CPU to run and ISR that handles the keypress.
 
 Interrupt driven implementation is more efficient than polling driven keyboard drivers. Therefore we will implement an interrupt driven keyboard driver.
@@ -221,11 +221,12 @@ This diagram illustrates the time dependent and sequential interaction between t
       1. The keyboard device is disabled by sending command 0xAD and 0xA7 to the PS/2 controller.
       2. The PS/2 controller's output buffer is flushed by reading from port 0x60.
       3. Initiate the PS/2 controller self test by sending command 0xAA to it. A response of 0x55 indicates success.
-      4. Enable the keyboard device by sending commands 0xAE and 0XA8 to the PS/2 controller.
+      4. Enable the keyboard device by sending commands 0xAE and 0xA8 to the PS/2 controller.
       5. Reset the device by sending 0xFF to the keyboard.
       6. Set the LED states by sending appropriate commands.
 
   2.  **Handling Keypress**
+
       When the user presses a key the keyboard device initiates an interrupt. This done by activating IRQ1 which is the standard interrupt line used by keyboards. In response to this interrupt, the CPU executes an ISR which updates a buffer with the read characters. The I/O functions in stdio.h like scanf will read from this buffer perform the necessary computation and show the results back to the user.
 
 ## Modules
