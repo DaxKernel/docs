@@ -31,9 +31,9 @@ The classification is based on what is in kernel space and what is in user space
 There are four protection rings that represent the access a piece of software has to the hardware and system:
 Out of these only two rings are of interest:
 
-1. Ring 0
+1. Ring 0  
    Code running in Ring 0 is said to be in supervisor mode. It has complete access to the hardware and system.
-2. Ring 3
+2. Ring 3  
    Code running in Ring 3 is said to be in user space. It has no direct access to hardware or the system.
    Instead it accesses the system through system calls.
 
@@ -276,9 +276,9 @@ So now we'll talk about what we will implement by the next review.
 - Lastly we will also implement unit testing for our standard C library.  
   Unit testing involves writing test cases for our functions. There are two challenges to implementing unit testing in our project:
 
-  1. **Unit testing C code is pretty difficult**
+  1. **Unit testing C code is pretty difficult**  
      This is because there is no dependency injection in C. Dependency injection is basically eliminating the variables that an object uses and instead providing it externally.
-  2. **Lack of standard C Library**
+  2. **Lack of standard C Library**  
      Most unit testing frameworks in C requires the C library to work. We don't have a C library yet.
 
   Instead of working around these pain points we will instead come up with our own unit testing framework called d_unit.
