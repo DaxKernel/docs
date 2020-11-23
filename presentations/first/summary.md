@@ -207,7 +207,7 @@ This diagram illustrates the shell scripts that we use to build and compile our 
 - The last script is the create-bootable-usb.sh script. This script creates a bootable USB of our operating system. It needs sudo permission and you need to pass the UNIX block file of the usb device. This of the form /dev/sda or something similar.
   This script formats the USB device and copies the kernel along with the GRUB bootloader into the USB device. Therefore there is a chance that you can destroy the data in the USB device if you are not careful. To prevent this we have a safety check which checks if the device has more than 10GB capacity. If this is true we do not format the drive and exit with error. If the capacity is less than 10GB, we make it bootable.
 
-## Sequence Diagram
+## Sequence Diagram (Keyboard Driver)
 
 ---
 
@@ -228,6 +228,30 @@ This diagram illustrates the time dependent and sequential interaction between t
   2.  **Handling Keypress**
 
       When the user presses a key the keyboard device initiates an interrupt. This done by activating IRQ1 which is the standard interrupt line used by keyboards. In response to this interrupt, the CPU executes an ISR which updates a buffer with the read characters. The I/O functions in stdio.h like scanf will read from this buffer perform the necessary computation and show the results back to the user.
+
+## Sequence Diagram (User command)
+
+---
+
+After boot the user interacts with DaxOS through a command prompt like windows. It is here that the user enters commands which will be executed by the kernel. These are not processes.  
+We will implement the following commands:
+
+1. **gfx_demo**  
+   This demo program will demonstrate some of our graphics and drawing capabilities.
+2. **dcalc**  
+   This is a calculator application that can evaluate mathematical expressions.
+3. **term_art**  
+   This will demonstrate some ASCII terminal art using VGA driver.
+
+The sequence diagram illustrates the process of running the commands. All the commands use operations from standard C library. So to take input and output text to the screen the stdio functionality will be used. Then the command proceeds to do its computation. If dynamic memory is needed, the command again uses the malloc function from standard C library. The malloc function maintains a list of free stores - that is free blocks of memory. If the requested chunk of memory is already in the free store then the malloc function marks it as being used and returns a pointer to it. On the other hand if the memory in the list is not enough, the malloc function will ask the kernel to provide more memory. In this case the kernel provides a new page to the malloc function and the malloc function promptly adds the block of memory into its free store and returns a pointer to it.
+
+## Sequence Diagram (Shutdown)
+
+---
+
+Shutdown is implemented using Advanced Power Management (APM). The user initiates the shutdown command. From that point onwards there is no more interaction between the user and the OS. The OS in return asks the power management module to perform APC shutdown.
+
+This involves calling a BIOS interrupt. In order to do that we need to first switch from protected mode to real mode. Then we need to inform the BIOS what kind of operation we want it to do. So we inform the BIOS that we want to perform APC operation by setting the register AX with value 0x5307. Next we inform the BIOS that we want the current operation to be done on all connected devices by setting register BX with value 0x0001. Lastly we put the value 0x03 in CX register to indicate shutdown operation. Now we can activate the BIOS function by raising software interrupt 0x15. Now the computer is powered off.
 
 ## Modules
 
