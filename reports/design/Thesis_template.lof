@@ -1,0 +1,9 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces An Example Figure}}{2}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces An Example showing Sub-figures\relax }}{3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original Sound File}}}{3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Decoder 1 output file}}}{3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Decoder 2 output File}}}{3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Decoder 3 output file}}}{3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
