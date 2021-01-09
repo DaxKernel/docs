@@ -1,0 +1,44 @@
+Intoduction 
+
+The Kernel is the fundamental interconnect between hardware and software of a computer system. Writing a kernel (kernel programming) is considered to be a difficult endeavor because development has to start from a bare metal state. DAX OS is a minimal 32-bit hobbyist operating system that can be used to provide a gentle introduction to students who wish to explore the domain of systems programming. The project is open source and licensed under GNU General Public License v3.0 to ensure unrestricted access and complete transparency. DAX OS comes with a terminal driver, keyboard and mouse driver and basic memory management. The project also uses appropriate development practises such as unit-testing and version control.
+
+
+Proposed System
+
+DAX OS is a 32-bit operating system/ Kernal built using the C programming language and x86 assembly. There are three main important implementations firstly implementing Display, which involves printing text to the screen and drawing geometric shapes such as squares, triangles and so on. In this current design, VGA text-mode and graphics-mode are used.
+
+Secondly, Input Drivers which involves implementing both keyboard and mouse drivers from scratch. Keyboard driver involves reading scan codes from the PS/2 controller and mouse driver involves handling interrupts. Finally, the C standard Library, the functions that are take for granted - like strlen and printf, scanf, malloc are all parts of the C standard library. They are not provided by the complier. It is up to the kernel to provide these libraries. In this project some parts of the stdlib like string.h and malloc function are implemented. The approach taken in this project is unique in C language and tools like assembly, C, Make, etc are used here.
+
+Our build architecture is a little involved because we are using the C programming language which does not have any real tooling for package management. Instead we have to compile and link each translation unit manually. We use a tool called GNU Make to manage the compilation process. GNU Make is a tool which controls the generation of executables and other non-source files of a program from the program's source files. It does this by executing commands in a file called Makefile. The makefile contains rules which specify what prerequisites are needed to build a particular executable and the steps required to build it. We have multiple Makefiles in our project to recursively compile and build each of our kernel components. In fact, the Makefiles by themselves account for 25% of our codebase. The Makefiles are executed by issuing corresponding make commands (for eg: make install or make installheaders). We use shell scripts to drive the make program. We have a shell script called config.sh that sets up the system environment variables that are utilized by make.
+
+The compilation process installs the operating system into the system root directory. This is currently the directory sysroot within our project. sysroot directory further contains two sub-directories - boot and usr. The boot directory contains DaxOS.kernel file and the usr directory contains the standard C library and unit tests. The kernel is booted by pointing the bootloader to the /boot directory. The built kernel is tested on qemu by calling the qemu.sh shell script. This works by first packaging the kernel into a .iso image file and running qemu with the iso file.
+
+
+Motivation 
+
+Writing low level code is hard and we wanted to do something challenging. To setup a compiler we need to install 8 different dependencies, download and compile bin utils and GCC as a cross-compiler and get a bootloader (eg: GRUB). Here we have to write custom linker script and build a bootable image of our kernel. Now, there is a clean slate with no printing, no keyboard, no mouse functionality. We want this project to be used in conjunction with Operating System subject in our academic syllabus. In this project Students can examine the codebase to understand how the concepts are implemented. This can encourage to students to contribute code to Linux kernel and other open-source projects. 
+
+Additionally we want students to understand how to write clean code and design good system architectures.Students can also be introduced to basic concepts of devOps such as: How to use source control and proper ettiquettes to follow when commiting? How to do unit testing? How to write testable code? How to design workflows that shorten development cycles?
+
+Technology Stack 
+
+Since we're developing a kernel/OS, the requirements for the end user is verey minimal The primary requirement is that the user has a Intel/AMD CPU with atleast 1 GB of RAM.
+We also assume that the user has basic interface devices such as monitor, keyboard and mouse. Disk space of 5GB is recommended. For this project, A stable linux distribution is recommended since most tools used for os-dev are written with POSIX compliance. Previously, if you wanted to use Windows as your developer environment, you had to use cygwin and lot of hacks. A lot has changed since 2020, this is not as strict of a requirement because of Windows Subsystem for Linux fully supports binutils and GCC. Binutils like GNU Linker and Assembler have to downloaed and compiled.Little involved, since some dependencies have to be installed as well.
+
+When we normally compile a C/C++ program using GCC, the binary produced is for the system with which we compile. During kernel development, we need to target another system architecture this requires a GCC Cross Compiler Like with binutils, we need to download source code, install dependencies and compile the cross-compiler. Once we have a kernel, we need a bootloader to load the kernel into main memory and branch to entry point of our kernel. Developing a custom bootloader is as big a project as developing a kernel. Therefore, we instead chose to use the GRUB Bootloader.Additionally GRUB also contains tools to verify multiboot.
+
+We heavily use code-build-debug cycle it's not practical to actually install the kernel to a usb and to reboot into it every time we need to debug. So for convenience, we will use a virtual machine. We've used qemu - since its fast and can be operated easily from the terminal. For Source control, we use git.Main remote repository is hosted on Github.For communications we use discord to collaborate and we have Github integration with discord.
+
+Existing Technology 
+
+Linux Kernel, created by Linus Torvals, is extremely large and contains about 27.8 million lines of code. It is free and open- source and compiling takes a long time. Kernel code is written using the GNU/GCC to the standard C programming language. 
+
+Windows Research Kernel is not free and open-source.It is difficult to get access as it need to get registered through University. It is based on older windows XP / Server 2003 code. It is outdated and not in development.  
+
+Minix microkernel, the best introductory kernel and developed by Andrew S. Tanenbaum. However, the kernel has a micro-kernel design instead of the familiar monolithic kernel. Traditional unix based kernels (eg: linux) follow monolithic design. It was created for educational purposes and its is now open-source.
+
+Redox is similar to MINIX (based on microkernel design) and written in Rust programming language. Rust is a systems programming language with guaranteed safety. It has all the disadvantages of MINIX.
+
+
+
+
