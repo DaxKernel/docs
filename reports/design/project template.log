@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  9 JAN 2021 14:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  9 JAN 2021 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -326,7 +326,7 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 )
 (./project template.aux (./Thesis_cover_outside.aux) (./Thesis_certificate.aux)
 (./0Acknowledgment.aux) (./0Abstract.aux) (./0Nomenclature.aux)
-(./1Introduction.aux) (./2LiteratureReview.aux) (./3BodyofThesis.aux)
+(./1Introduction.aux) (./2DesignDiagrams.aux) (./3BodyofThesis.aux)
 (./4Conclusion.aux) (./5Appendices.aux) (./6Publications.aux) (./REFERENCES.aux
 ))
 \openout1 = `"project template.aux"'.
@@ -497,26 +497,30 @@ Chapter 1.
 
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2] [3]
-\openout2 = `2LiteratureReview.aux'.
+[2]) [3]
+\openout2 = `2DesignDiagrams.aux'.
 
- (./2LiteratureReview.tex
+ (./2DesignDiagrams.tex
 Chapter 2.
 
-LaTeX Warning: Citation `Chen' on page 4 undefined on input line 5.
+LaTeX Warning: Citation `Chen' on page 4 undefined on input line 4.
 
 
-LaTeX Warning: Citation `Kondoz' on page 4 undefined on input line 5.
+LaTeX Warning: Citation `Kondoz' on page 4 undefined on input line 4.
 
 
-LaTeX Warning: Citation `atal' on page 4 undefined on input line 5.
+LaTeX Warning: Citation `atal' on page 4 undefined on input line 4.
 
 ) [4
 
@@ -611,20 +615,20 @@ Chapter 6.
 ] (./project template.aux
 (./Thesis_cover_outside.aux) (./Thesis_certificate.aux) (./0Acknowledgment.aux)
 (./0Abstract.aux) (./0Nomenclature.aux) (./1Introduction.aux)
-(./2LiteratureReview.aux) (./3BodyofThesis.aux) (./4Conclusion.aux)
+(./2DesignDiagrams.aux) (./3BodyofThesis.aux) (./4Conclusion.aux)
 (./5Appendices.aux) (./6Publications.aux) (./REFERENCES.aux))
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 5270 strings out of 482854
- 77166 string characters out of 5956881
- 321979 words of memory out of 5000000
- 20428 multiletter control sequences out of 15000+600000
+ 5267 strings out of 482854
+ 77070 string characters out of 5956881
+ 321949 words of memory out of 5000000
+ 20425 multiletter control sequences out of 15000+600000
  546345 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,11n,45p,516b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,45p,776b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
@@ -641,7 +645,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "project template.pdf" (20 pages, 546660 bytes).
+Output written on "project template.pdf" (20 pages, 551270 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams
