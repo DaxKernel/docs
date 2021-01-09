@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  7 JAN 2021 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  9 JAN 2021 13:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -439,14 +439,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [1
+)
+Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--45
+[][] 
+ []
+
+) [1
 
 
 ]
 \openout2 = `0Acknowledgment.aux'.
 
-
-(./0Acknowledgment.tex) [1
+ (./0Acknowledgment.tex) [1
 
 
 
@@ -456,8 +460,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  (./0Abstract.tex) [2
 
 
-] (./project template.toc
-[3
+] (./project template.toc [3
 
 
 ])
@@ -638,7 +641,7 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "project template.pdf" (20 pages, 537842 bytes).
+Output written on "project template.pdf" (20 pages, 545122 bytes).
 PDF statistics:
  162 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams
