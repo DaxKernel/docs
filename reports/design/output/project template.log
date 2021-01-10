@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  10 JAN 2021 11:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  10 JAN 2021 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -366,7 +366,7 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 (output/Thesis_certificate.aux) (output/0Acknowledgment.aux)
 (output/0Abstract.aux) (output/0Nomenclature.aux) (output/1Introduction.aux)
 (output/2DesignDiagrams.aux) (output/3OtherDesignConsiderations.aux)
-(output/4Conclusion.aux) (output/REFERENCES.aux))
+(output/4Conclusion.aux) (output/References.aux))
 \openout1 = `"project template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -616,7 +616,7 @@ Chapter 4.
 
 
 ]
-\openout2 = `REFERENCES.aux'.
+\openout2 = `References.aux'.
 
  (./References.tex) [19
 
@@ -628,10 +628,10 @@ Chapter 4.
 (output/0Acknowledgment.aux) (output/0Abstract.aux) (output/0Nomenclature.aux)
 (output/1Introduction.aux) (output/2DesignDiagrams.aux)
 (output/3OtherDesignConsiderations.aux) (output/4Conclusion.aux)
-(output/REFERENCES.aux)) ) 
+(output/References.aux)) ) 
 Here is how much of TeX's memory you used:
- 6273 strings out of 482854
- 94847 string characters out of 5956881
+ 6272 strings out of 482854
+ 94837 string characters out of 5956881
  379486 words of memory out of 5000000
  21425 multiletter control sequences out of 15000+600000
  545529 words of font info for 66 fonts, out of 8000000 for 9000
@@ -651,7 +651,7 @@ ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "output/project template.pdf" (27 pages, 436187 bytes).
+Output written on "output/project template.pdf" (27 pages, 436286 bytes).
 PDF statistics:
  166 PDF objects out of 1000 (max. 8388607)
  107 compressed objects within 2 object streams
