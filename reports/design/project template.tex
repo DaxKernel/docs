@@ -3,7 +3,7 @@
 %\renewcommand{\bibname}{}  % To make title "BIBLIOGRAPHY" to "REFERENCES"
 %\usepackage{amsmath,graphicx,color,geometry,fancyhdr,subfigure}
 \usepackage{amsmath,epsfig,cite,graphicx,ltablex,tabularx,setspace,url,
-floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentfirst,booktabs,array,xspace}
+floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentfirst,booktabs,array,xspace,nomencl}
 %\usepackage[caption=false,font=footnotesize]{subfig}
 \DeclareMathOperator*{\esup}{argmax}
 %\usepackage{amsmath,graphicx,color,geometry,subfigure}
@@ -67,9 +67,6 @@ floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentf
 \listoffigures
 
 \clearpage
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
-\clearpage
 \addcontentsline{toc}{chapter}{Nomenclature}
 \include{0Nomenclature}
 \newpage
@@ -77,20 +74,17 @@ floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentf
 \pagestyle{fancy}                       % Sets fancy header and footer
 \fancyfoot{}                            % Delete current footer settings
 \fancyhead{}                            % Delete current footer settings
-\rhead{project title}		% Write your thesis topic here
+\rhead{DaxOS Design Report}		% Write your thesis topic here
 \lfoot{Dept: of {Computer Science and Engineering}}
 \rfoot{ \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\pagenumbering}{} 
 \include{1Introduction}
-%\include{2LiteratureReview}
 \include{2DesignDiagrams}
-\include{3BodyofThesis}
+\include{3OtherDesignConsiderations}
 %-----include as many chapters as needed-----%
 \include{4Conclusion}
-\include{5Appendices}
-\include{6Publications}
 %%%-----BIBLIOGRAPHY-----%
 %\addcontentsline{toc}{section}{REFERENCES}
 %\bibliography{myreference}

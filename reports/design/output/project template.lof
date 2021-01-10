@@ -1,12 +1,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Use Case Diagram\relax }}{5}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Activity Diagram\relax }}{8}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Sequence Diagram for keyboard driver\relax }}{10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Sequence Diagram for user command\relax }}{11}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Sequence Diagram for system shutdown\relax }}{12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces An Example Figure}}{6}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces An Example showing Sub-figures\relax }}{7}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Original Sound File}}}{7}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Decoder 1 output file}}}{7}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Decoder 2 output File}}}{7}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Decoder 3 output file}}}{7}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Illustration of Kernel Architecture\relax }}{14}%
 \addvspace {10\p@ }
