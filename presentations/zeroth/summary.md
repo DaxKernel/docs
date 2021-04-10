@@ -5,7 +5,7 @@
 - We want to build a 32-bit operating system/ kernel
 - We will use the C programming language and x86 assembly
   - The reasoning behind why we did not choose a modern programming language like Rust will be explained in the later slides.
-- Our three basic goals are:
+- Our three basic goals are:-
 
   ### 1. Implement Display
 
