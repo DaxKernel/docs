@@ -2,14 +2,11 @@
 
 ---
 
- Creating a 32 bit os is a hard task itself ,along with it creating  memory allocator makes it much harder.
- Also if a memory allocator is created we will have to check for errors and debug if any are found .
+ If a memory allocator is created we will have to check for errors and debug if any are found .
  A much simpler way would be porting an existing malloc library to the kernel space in the os .
  We can focus on creating the os rather than spending a dedicated amount of time creating a memory allocator and as it is a well tested library we wouldn’t have to debug it. 
  Hence porting is fast, scalable, stable and requires less time to implement. 
- There are different types of memory allocator and the developer can choose the it according to the need of the os. 
- We will be using liballoc which was once part of Spoon Operating System.
-
+ 
 # Describe the hooks that need to be implemented
 
 ---
