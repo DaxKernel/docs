@@ -12,9 +12,10 @@
 ---
 
  Hooks allow memory managers to request memory in terms of pages from the kernel.
- The page size is obtained from somewhere in the source. 
+ The page size is obtained from set using the liballoc_init function. 
  Number of pages required is the parameter accepted by hook. 
- Basically  4 types of hooks are implemented 2 of which are used for page allocation and deallocation and 2 used for locking and unlocking critical session.
+ Basically four types of hooks are implemented, two of which are used for page allocation and deallocation and two used for critial session.
+ Critical sesion is a piece of code that is implemented here so that the same memory cannot be used simultaneously by multiple threads.
 
 1. void *alloc_page(size_t pages); 
    Takes page size as input parameters , allocates consecutive pages  in virtual memory and returns a pointer pointing to the beginning of the group .
@@ -37,7 +38,7 @@
  The page size is obtained from the liballoc_init() function .
 
  1. For allocation of page we are using : void* liballoc_alloc(size_t n_pages) .
-  The number of pages required for allocation is accepted as a input parameter and if the required number of ages is not available while considering all the number of unallocated pages then the function returns a NULL value. 
+  The number of pages required for allocation is accepted as a input parameter and if the required number of pages is not available while considering all the number of unallocated pages then the function returns a NULL value. 
   If the required number of pages are available then memory allocation stats from pointer *start  .
   Consecutive pages is allocated till the number of required pages is satisfied .The pointer of the allocated memory is returned.
 
@@ -48,9 +49,9 @@
   0 is returned if the deallocation of pages are successful.
 
  3. For locking of memory data structure we are using : int liballoc_lock() .
-  We have decided to clear interrupts instead of implementing spinlock.
+  Interrupts are cleared so that multiple threads cannot access the memory simultaneously .
   Interrupts are cleared using asm("cli"); and if the lock acquired is successful ,0 is returned .
 
  4. For unlocking of memory data structure we are using : int liballoc_unlock() . 
   Setting back the interrupts are done using asm("sti") command.
-  Return 0 if the lock is releaed successfully.
+  Return 0 if the lock is released successfully.
