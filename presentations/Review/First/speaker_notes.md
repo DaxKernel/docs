@@ -89,3 +89,56 @@ i.e it is sizeof(this struct) - sizeof(this struct.size)
 * **type** tells us the nature of this memory region. If type is 1, this memory region can be considered to be free.  
 We don't want to use magic constant numbers in our code so we use a macro to define 1 as `MEMORY_AVAILABLE`.   
 We also use another macro to indicate whether this region of memory overlaps with our kernel.
+
+## Physical Frame Allocator
+---
+* Our objective here is to create a mechanism that allows us to allocate memory in large blocks - about 4KB here -  
+and correspondingly deallocate it. This is what the malloc function will use internally.
+* All we need to do really is simply keep track of the available memory and handle requests for memory allocation and deallocation.
+* To keep track of free memory we have two main choices:
+
+    * We can use a bitmap. In this approach every bit in the bitmap corresponds to a single 4KB chunk of free memory.  
+    The primary advantage here is space efficiency i.e we only need one bit for each block.  
+    However when allocating or deallocating memory we will need to search the entire bitmap to find a free block.  
+    This search operation takes O(n) time.
+
+    * Another possibility is to use a stack. This approach is very simple because all you need to do is push each memory address into the stack.  
+    Now when you need a free page frame you simply do a pop operation on the stack.  
+    In other words we can serve requests in O(1) time.
+
+* We use the stack approach in our OS.
+
+## Implementation (of PFA)
+---
+* First we need to calculate how much memory is needed for the stack that we use to keep track of memory.  
+We can derive this mathematically. We'll look into that in the next slide.
+
+* The next step is to allocate this stack at the end of the kernel.
+
+* Next we need to mark any overlapping we have with kernel.  
+When GRUB creates the memory map, it does not know that we have a kernel in memory.  
+Therefore some of the regions that GRUB may mark as free may actually be used by our kernel.  
+So if a particular region of the memory is overlapping with our kernel we need to
+mark it with the macro MEMORY_OVERLAP so that we do not accidentally push those regions into the stack.
+
+* Now all thats left to do is to push all the free memory addresses that do not overlap with our kernel into the stack.  
+We'll see the code to do this.
+
+## Deriving the amount of stack space needed
+---
+
+If T is the number of bytes of free memory and m is the number of page frames,  
+the sum of the number of page frames multiplied by the size of each page frame and the space needed for stack should be equal to T.
+From this, we can make m the subject.  
+Clearly, the final equation becomes `m=4100/T`.  
+Since we know T, we can easily find m.
+
+## Pushing to the stack
+---
+
+What we're doing here is:
+
+1. If a region of memory is overlapping with kernel+stack space, we reduce its length by the number of bytes that  
+are overlapping and we set its base address to the end of the stack.
+
+2. Then we push memory addresses within this memory region that are separated by 4096 bytes into the stack.
