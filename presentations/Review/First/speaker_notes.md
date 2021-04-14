@@ -142,3 +142,42 @@ What we're doing here is:
 are overlapping and we set its base address to the end of the stack.
 
 2. Then we push memory addresses within this memory region that are separated by 4096 bytes into the stack.
+
+## Porting liballoc
+---
+So far we have implemented a physical page allocator i.e we now have a mechanism to allocate memory in blocks of 4kb each.
+However, usually we only want to allocate a small amount of memory i.e we still need to implement a mechanism that  
+will allow us to allocate memory in sizes smaller that 4kb. In other words, we want a granular memory allocator.
+
+What we'll do is port an existing granular memory allocator to our OS. 
+
+There are many existing open source memory allocators but we have chosen to go with liballoc here.
+This is because:
+* liballoc is quite popular i.e it has a good reputation and has stood the test of time. 
+* liballoc is quite small - just two files - liballoc.h and liballoc.c
+
+To port liballoc to our OS, we will need to implement some hooks. These hooks are functions that the liballoc library expects  
+us to provide. Primarily, the hooks require an existing and working physical memory allocator.
+So in short, 
+1. we simply add the files to our project
+2. modify the makefiles correspondingly 
+3. implement the hooks
+4. compile
+
+## liballoc - Hooks
+---
+
+* The first two hooks are simply used to allocate and free physical pages.  
+**Describe the functions**
+* The next two hooks are used for mutual exclusion i.e there are some operations that liballoc does internally that  
+must be executed in an atomic manner. So we need to provide a lock/unlock mechanism.
+Since our OS is single threaded, the only source of concurrency is interrupts.  
+So on the lock procedure, we disable interrupts by clearing the interrupt flag and on the unlock procedure,  
+we enable interrupts by setting the interrupt flag.
+
+## DEMO
+---
+Create a dynamic array, initialize and print to the screen. 
+Then free the memory.
+
+## THANK YOU
