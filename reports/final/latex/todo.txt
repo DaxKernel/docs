@@ -1,0 +1,32 @@
+1.Acknowledgement
+
+2.Abstract
+
+3.Introduction
+	1.1 Existing technologies - Linux vs windows Research Kernel vs Minix
+	1.2 Motivation
+	1.3 Proposed System 
+	1.4 Technology Stack
+
+4.Design Diagrams
+	4.1 Use case Diagram
+	4.2 Activity Diagram
+	4.3 Sequence Diagram
+	
+5. Other Design Considerations
+	5.0 Kernel Architecture Design ( Monolithic vs Microkernel vs Hybrdi )
+	5.1 Build process
+	5.2 Keyboard Design Decisions
+	5.3 Memory Segmentation 
+	
+6. Conclusion
+
+7. Reference
+
+<!--- Page Break -->
+
+8. List of figures
+	x.x Monolithic Kernel
+	x.x Use case Diagram
+	x.x Activity Diagram
+	x.x Sequence Diagram

@@ -1,0 +1,105 @@
+\documentclass[12pt,a4 paper]{report}  % To indicate fontsize, page type and document type
+\renewcommand{\baselinestretch}{1.5} % To make the linespacing in the document 1.5cm
+%\renewcommand{\bibname}{}  % To make title "BIBLIOGRAPHY" to "REFERENCES"
+%\usepackage{amsmath,graphicx,color,geometry,fancyhdr,subfigure}
+\usepackage{amsmath,epsfig,cite,graphicx,ltablex,tabularx,setspace,url,
+floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentfirst,booktabs,array,xspace,nomencl}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+\DeclareMathOperator*{\esup}{argmax}
+%\usepackage{amsmath,graphicx,color,geometry,subfigure}
+%  'amsmath'   --   for [equation*]
+%  'graphicx'    --   To include figures
+%  'color'          --   To include texts with color and also with different fonts
+%  'geometry'   --   To change page properties
+%  'fancyhdr'    --   To make the pages look good by including special effects
+%  'subfigure'   --   To include two figures in a single figure
+% INCLUDE subfigure after fancyhdr since now it is not working because packages are not updated fully.
+
+\geometry{left=1.25in,right=1in}
+\geometry{top=1.1in,bottom=1in}       % page geometry
+
+\setcounter{secnumdepth}{3}%
+% to get subsubsections numbered
+\setcounter{tocdepth}{3}%
+% to get subsubsections in the table of contents
+
+% Project Details
+\newcommand{\projectName}{DaxOS\xspace}
+
+\newcommand{\firstAuthor}{Nihal Narayan\xspace}
+\newcommand{\firstAuthorRegNo}{MBT17CS081\xspace}
+
+\newcommand{\secondAuthor}{Antony S. Chirayil\xspace}
+\newcommand{\secondAuthorRegNo}{MBT17CS023\xspace}
+
+\newcommand{\thirdAuthor}{Mathew Koshy\xspace}
+\newcommand{\thirdAuthorRegNo}{MBT17CS068\xspace}
+
+\newcommand{\fourthAuthor}{R Midhun Suresh\xspace}
+\newcommand{\fourthAuthorRegNo}{MBT17CS095\xspace}
+
+\begin{document}  % actual document beginning
+\renewcommand\bibname{REFERENCES}
+
+%-----COVER PAGE-----%
+\include{Thesis_cover_outside}
+
+%-----COVER PAGE-----%
+
+%-----CERTIFICATE-----%
+\thispagestyle{empty}
+\include{Thesis_certificate}
+%-----CERTIFICATE-----%
+
+\pagenumbering{roman}   % to get page numbers for initial pages in terms of roman numbers
+%-----ACKNOWLEDGEMENTS-----%
+\include{0Acknowledgment}
+%-----ACKNOWLEDGEMENTS-----%
+
+%-----ABSTRACT-----%
+\include{0Abstract}
+%-----ABSTRACT-----%
+
+\tableofcontents
+
+\clearpage
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+\clearpage
+\addcontentsline{toc}{chapter}{Nomenclature}
+\include{0Nomenclature}
+\newpage
+\pagenumbering{arabic}
+\pagestyle{fancy}                       % Sets fancy header and footer
+\fancyfoot{}                            % Delete current footer settings
+\fancyhead{}                            % Delete current footer settings
+\rhead{DaxOS Design Report}		% Write your thesis topic here
+\lfoot{Dept: of {Computer Science and Engineering}}
+\rfoot{ \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\pagenumbering}{} 
+\include{1Introduction}
+\include{2DesignDiagrams}
+\include{3OtherDesignConsiderations}
+%-----include as many chapters as needed-----%
+\include{4Conclusion}
+%%%-----BIBLIOGRAPHY-----%
+%\addcontentsline{toc}{section}{REFERENCES}
+%\bibliography{myreference}
+%\bibliographystyle{IEEEtran}
+%-----BIBLIOGRAPHY-----%
+\include{References}
+
+\end{document}  % document ending 
+
+%To run, go to the directory where the files are saved, and type:'latex FILENAME.tex' 
+%To generate the PDF, type: 'dvipdfm FILENAME.dvi' 
+%To generate the References page, type the following commands: 
+%'latex FILENAME.tex' 
+%'bibtex FILENAME.aux' 
+%'latex FILENAME.tex' 
+%'latex FILENAME.tex' 
+%'dvipdfm FILENAME.dvi' 
+

@@ -1,0 +1,12 @@
+\contentsline {chapter}{List of Figures}{iv}
+\contentsline {chapter}{List of Tables}{v}
+\contentsline {chapter}{Nomenclature}{vi}
+\contentsline {chapter}{\numberline {1}Chapter heading}{1}
+\contentsline {section}{\numberline {1.1}Sections in chapter}{1}
+\contentsline {subsection}{\numberline {1.1.1}An example subsection}{1}
+\contentsline {subsubsection}{\numberline {1.1.1.1}Examples of equations}{1}
+\contentsline {subsubsection}{\numberline {1.1.1.2}Examples of figures}{2}
+\contentsline {subsubsection}{\numberline {1.1.1.3}Examples of tables}{2}
+\contentsline {chapter}{\numberline {2}Conclusion}{4}
+\contentsline {chapter}{\numberline {3}Appendix}{5}
+\contentsline {chapter}{REFERENCES}{6}

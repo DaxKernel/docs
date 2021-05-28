@@ -1,0 +1,5 @@
+\nomenclatureentry{a$GDT$@[{$GDT$}]\begingroup Global Descriptor Table\nomeqref {0}|nompageref}{vi}
+\nomenclatureentry{a$IDT$@[{$IDT$}]\begingroup Interrupt Descriptor Table\nomeqref {0}|nompageref}{vi}
+\nomenclatureentry{a$ISR$@[{$ISR$}]\begingroup Interrupt Service Routine\nomeqref {0}|nompageref}{vi}
+\nomenclatureentry{a$VGA$@[{$VGA$}]\begingroup Video Graphics Array \nomeqref {0}|nompageref}{vi}
+\nomenclatureentry{a$APM$@[{$APM$}]\begingroup Advanced Power Management\nomeqref {0}|nompageref}{vi}
