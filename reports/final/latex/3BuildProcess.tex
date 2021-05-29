@@ -75,3 +75,39 @@ With the shellscript, compiling the OS is as easy as invoking:
 
 Other available shellscripts and their functionalities were introduced in the Design Diagrams chapter.
 
+\section{Makefile}\label{section:Makefile}
+A Makefile is a particular type of file that specifies the steps to be taken to build a particular piece of software.\\
+DaxOS uses Makefiles to drive the compilation process.\\
+Makefiles are written by specifying a target and the steps needed
+to produce that target. Additionally dependencies needed to build a target can also be specified, in which case, the steps needed
+to produce the dependencies also need to be written.
+\pagebreak
+
+Consider the following snippet of a Makefile that is used in DaxOS:
+
+\vspace{0.5cm}
+\lstset{language=make}
+
+\begin{lstlisting}
+DaxOS.kernel: $(OBJS) $(ARCHDIR)/linker.ld
+$(CC) -T $(ARCHDIR)/linker.ld -o $@ $(CFLAGS) $(LINK_LIST)
+grub-file --is-x86-multiboot DaxOS.kernel
+
+.c.o:
+    $(CC) -MD -c $< -o $@ -std=gnu11 $(CFLAGS) $(CPPFLAGS)
+
+.S.o:
+    $(CC) -MD -c $< -o $@ $(CFLAGS) $(CPPFLAGS)
+\end{lstlisting}
+
+This makefile can be interpreted as follows:
+\begin{itemize}
+    \item To produce \textbf{DaxOS.kernel}, the files in \textit{OBJS} and \textit{linker.ld} in \textit{ARCHDIR} needs to be produced first.
+    \item Object files(\textit{.o}) are produced from C source files (\textit{.c}) files by executing \$(CC) command.
+    \item Object files(\textit{.o}) are produced from Assembly source files (\textit{.S}) files by executing \$(CC) command.
+    \item \$(foo) indicates a variable named \textit{foo}.
+\end{itemize}
+
+\tcbox{
+\textbf{Note}: \$(CC) here is a variable that is set to the GCC cross-compiler by the shellscript.
+}

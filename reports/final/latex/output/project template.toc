@@ -13,5 +13,6 @@
 \contentsline {section}{\numberline {3.2}Building cross-compiler and binutils}{14}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Setting up the emulator}{15}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Overview of shell-scripts}{15}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Conclusion}{16}{chapter.4}%
-\contentsline {chapter}{REFERENCES}{17}{chapter.4}%
+\contentsline {section}{\numberline {3.5}Makefile}{15}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Conclusion}{17}{chapter.4}%
+\contentsline {chapter}{REFERENCES}{18}{chapter.4}%
