@@ -3,7 +3,8 @@
 %\renewcommand{\bibname}{}  % To make title "BIBLIOGRAPHY" to "REFERENCES"
 %\usepackage{amsmath,graphicx,color,geometry,fancyhdr,subfigure}
 \usepackage{amsmath,epsfig,cite,graphicx,ltablex,tabularx,setspace,url,
-floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentfirst,booktabs,array,xspace,nomencl}
+floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,
+indentfirst,booktabs,array,xspace,nomencl, hyperref}
 %\usepackage[caption=false,font=footnotesize]{subfig}
 \DeclareMathOperator*{\esup}{argmax}
 %\usepackage{amsmath,graphicx,color,geometry,subfigure}
@@ -14,6 +15,13 @@ floatflt,caption,float,comment,fancyhdr,geometry,subfigure,amssymb,color,indentf
 %  'fancyhdr'    --   To make the pages look good by including special effects
 %  'subfigure'   --   To include two figures in a single figure
 % INCLUDE subfigure after fancyhdr since now it is not working because packages are not updated fully.
+
+\hypersetup{
+  colorlinks   = true, %Colours links instead of ugly boxes
+  urlcolor     = blue, %Colour for external hyperlinks
+  linkcolor    = black, %Colour of internal links
+  citecolor   = black %Colour of citations
+}
 
 \geometry{left=1.25in,right=1in}
 \geometry{top=1.1in,bottom=1in}       % page geometry

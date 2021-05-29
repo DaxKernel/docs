@@ -41,27 +41,28 @@
 		The data from the circular buffer is read by primitives from the C standard library such as scanf in stdio. The data from keyboard is
 		read from port 0x60 using inline assembly function \textbf{inportb()} defined in io.c file.
 	\end{flushleft}
+
+	\item \textbf{Setting up memory}
+	\begin{flushleft}
+		This involves ensuring that multiboot is working as intended and confirming that the 
+		\textbf{multiboot\_info\_t} structure contains the fields neccessary for memory management.
+		 Other intermediate datastructures needed for memory management such as the stack and global variables
+		are also initialized at this stage.
+	\end{flushleft}
 \end{enumerate}
 
 \begin{flushleft}
 The second interaction involves the user issuing a command to the terminal. \\
 The command may require dynamic memory to be allocated. Dynamic memory is
 allocated by implementing the malloc C function. The malloc function acts as a
-wrapper around the kernels memory manager. This needs paging and virtual
-memory to be enabled.\\
-The final and last interaction between the user and the system is the shutdown
-sequence. This can be implemented by supporting Intel's ACPI protocol or the now
-depreciated APM protocol. These protocols control the amount of power each device
-is given. Additionally shutting down specific emulators by writing data to specific
-ports can be done.
-
+wrapper around the kernels memory manager. 
 \end{flushleft}
 
 
 
 
 \begin{figure}[h!]
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{use_case}
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{use-case}
 	\caption{Use Case Diagram}
 \end{figure}
 
@@ -145,7 +146,6 @@ ports can be done.
 
 \section{Sequence Diagram}
 
-\subsection{Keyboard Driver}
 \begin{flushleft}
 	This diagram illustrates the time dependent and sequential interaction between the
 	user, the OS and the keyboard driver.
@@ -174,64 +174,19 @@ ports can be done.
 		
 	\end{enumerate}
 \end{flushleft}
+
 \begin{figure}[h!]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{kbd_driver}
 	\caption{Sequence Diagram for keyboard driver}
 \end{figure}
-\pagebreak
+\clearpage
 
-
-\subsection{User Command}
-\begin{flushleft}
-	After boot the user interacts with DaxOS through a command prompt like windows. It
-	is here that the user enters commands which will be executed by the kernel. These
-	are not processes.
-	
-	Here the following commands are implemented:
-	\begin{enumerate}
-	\item \textbf{gfx\_demo}\\
-	This demo program will demonstrate some of the graphics and drawing capabilities.
-	\item \textbf{dcalc}\\
-	This is a calculator application that can evaluate mathematical expressions.
-	\item \textbf{term\_art}\\
-	This will demonstrate some ASCII terminal art using VGA driver.
-	\end{enumerate}
-
-	The sequence diagram illustrates the process of running the commands. All the
-	commands use operations from standard C library.To take input and output text to
-	the screen the stdio functionality will be used.Then the command proceeds to do its
-	computation. If dynamic memory is needed, the command again uses the malloc
-	function from standard C library. The malloc function maintains a list of free stores -
-	that is free blocks of memory. If the requested chunk of memory is already in the free
-	store then the malloc function marks it as being used and returns a pointer to it. On
-	the other hand if the memory in the list is not enough, the malloc function asks the
-	kernel to provide more memory. In this case the kernel provides a new page
-	to the malloc function and the malloc function promptly adds the block of memory
-	into its free store and returns a pointer to it.
-	
-\end{flushleft}
-
+\hspace{0pt}
+\vfill
 \begin{figure}[h!]
 	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{user_command}
 	\caption{Sequence Diagram for user command}
 \end{figure}
-
+\hspace{0pt}
+\vfill
 \pagebreak
-\subsection{Shutdown}
-\begin{flushleft}
-	Shutdown is implemented using Advanced Power Management (APM).\\
-	Once the user initiates the shutdown command, there is no longer any interaction 
-	between the user and the OS. The OS will request the power management module to perform the APC shutdown procedure.\\
-	This involves calling a BIOS interrupt. This further requires switching from protected mode to real mode. 
-	Once in real mode, the BIOS is informed about the kind of operation that needs to be performed.
-	The BIOS is informed that it is required to perform APC operation by setting the
-	register AX with the value 0x5307. The BIOS is informed that the current operation is to be done on all connected
-	devices by setting register BX with the value 0x0001. Lastly the value 0x03 is put in the CX register to indicate shutdown
-	operation. Now the BIOS function is activated by raising software interrupt 0x15.
-	The computer is powered off.
-\end{flushleft}
-\vspace{1.5 cm}
-\begin{figure}[h!]
-	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{shutdown}
-	\caption{Sequence Diagram for system shutdown}
-\end{figure}

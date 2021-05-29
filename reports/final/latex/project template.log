@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  28 MAY 2021 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  29 MAY 2021 15:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -313,39 +313,134 @@ Package tocbasic Info: babel extension for `nls' omitted
 \nomlabelwidth=\dimen194
 \nom@tempdim=\dimen195
 \nomitemsep=\skip74
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+) (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen196
+\Hy@linkcounter=\count283
+\Hy@pagecounter=\count284
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count285
+Package hyperref Info: Hyper figures OFF on input line 4464.
+Package hyperref Info: Link nesting OFF on input line 4469.
+Package hyperref Info: Hyper index ON on input line 4472.
+Package hyperref Info: Plain pages OFF on input line 4479.
+Package hyperref Info: Backreferencing OFF on input line 4484.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4717.
+\c@Hy@tempcnt=\count286
+LaTeX Info: Redefining \url on input line 5076.
+\XeTeXLinkMargin=\dimen197
+ (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count287
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
+Package hyperref Info: Hyper figures OFF on input line 6347.
+Package hyperref Info: Link nesting OFF on input line 6352.
+Package hyperref Info: Hyper index ON on input line 6355.
+Package hyperref Info: backreferencing OFF on input line 6362.
+Package hyperref Info: Link coloring OFF on input line 6367.
+Package hyperref Info: Link coloring with OCG OFF on input line 6372.
+Package hyperref Info: PDF/A mode OFF on input line 6377.
+LaTeX Info: Redefining \ref on input line 6417.
+LaTeX Info: Redefining \pageref on input line 6421.
+ (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\Hy@abspage=\count288
+\c@Item=\count289
+\c@Hfootnote=\count290
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count291
+\c@bookmark@seq@number=\count292
+ (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
+)
+\Hy@SectionHShift=\skip75
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count283
+\l__kernel_color_stack_int=\count293
 \l__pdf_internal_box=\box59
 ) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.aux (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_certificate.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Acknowledgment.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Abstract.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Nomenclature.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/1Introduction.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/2DesignDiagrams.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/3OtherDesignConsiderations.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.aux))
 \openout1 = `"project template.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen196
+\scratchcounter=\count294
+\scratchdimen=\dimen256
 \scratchbox=\box60
-\nofMPsegments=\count285
-\nofMParguments=\count286
+\nofMPsegments=\count295
+\nofMParguments=\count296
 \everyMPshowfont=\toks30
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen197
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen257
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
 \everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -355,6 +450,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
@@ -392,10 +488,28 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\AtBeginShipoutBox=\box61
+Package hyperref Info: Link coloring ON on input line 49.
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+ (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count300
+)
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
+ (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.out) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.out)
+\@outlinefile=\write4
+\openout4 = `"project template.out"'.
+
 \openout2 = `Thesis_cover_outside.aux'.
 
-(/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.tex
-<mbcetlogo-eps-converted-to.pdf, id=1, 479.7925pt x 446.66875pt>
+ (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.tex
+<mbcetlogo-eps-converted-to.pdf, id=71, 479.7925pt x 446.66875pt>
 File: mbcetlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use mbcetlogo-eps-converted-to.pdf>
 Package pdftex.def Info: mbcetlogo-eps-converted-to.pdf  used on input line 43.
@@ -423,7 +537,11 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--45
 [][] 
  []
 
-) [1
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \include{Thesis_certificate}
+                                  [1
 
 
 ]
@@ -439,24 +557,24 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--45
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Abstract.tex) [2
 
 
-] (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.toc [3
+] (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.toc)
+\tf@toc=\write5
+\openout5 = `"project template.toc"'.
+
+ [3
 
 
-])
-\tf@toc=\write4
-\openout4 = `"project template.toc"'.
+] (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.lof)
+\tf@lof=\write6
+\openout6 = `"project template.lof"'.
 
- [4] (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.lof)
-\tf@lof=\write5
-\openout5 = `"project template.lof"'.
-
- [5
+ [4
 
 
 ]
 \openout2 = `0Nomenclature.aux'.
 
- (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Nomenclature.tex) [6
+ (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Nomenclature.tex) [5
 
 
 ]
@@ -464,15 +582,15 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--45
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/1Introduction.tex
 Chapter 1.
-[1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.22 \newpage
+              [1
 
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
@@ -489,46 +607,46 @@ Chapter 2.
 
 
 ]
-<./diagrams/use_case.png, id=55, 663.47874pt x 342.27875pt>
-File: ./diagrams/use_case.png Graphic file (type png)
-<use ./diagrams/use_case.png>
-Package pdftex.def Info: ./diagrams/use_case.png  used on input line 64.
-(pdftex.def)             Requested size: 434.90065pt x 224.35872pt.
- [5 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/use_case.png>] [6]
-<./diagrams/activity.png, id=65, 639.38875pt x 466.74374pt>
+<./diagrams/use-case.png, id=175, 643.40375pt x 303.1325pt>
+File: ./diagrams/use-case.png Graphic file (type png)
+<use ./diagrams/use-case.png>
+Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
+(pdftex.def)             Requested size: 434.91693pt x 204.90625pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[5] [6 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/use-case.png>] [7]
+<./diagrams/activity.png, id=195, 639.38875pt x 466.74374pt>
 File: ./diagrams/activity.png Graphic file (type png)
 <use ./diagrams/activity.png>
-Package pdftex.def Info: ./diagrams/activity.png  used on input line 140.
+Package pdftex.def Info: ./diagrams/activity.png  used on input line 141.
 (pdftex.def)             Requested size: 434.90543pt x 317.47412pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/activity.png>]
-<./diagrams/kbd_driver.png, id=73, 534.99875pt x 362.35374pt>
+[8] [9 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/activity.png>]
+<./diagrams/kbd_driver.png, id=208, 534.99875pt x 362.35374pt>
 File: ./diagrams/kbd_driver.png Graphic file (type png)
 <use ./diagrams/kbd_driver.png>
-Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 178.
+Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 179.
 (pdftex.def)             Requested size: 434.92215pt x 294.57204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9
+[10
 
-] [10 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_driver.png>]
-<./diagrams/user_command.png, id=81, 534.99875pt x 302.12875pt>
+] [11 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_driver.png>]
+<./diagrams/user_command.png, id=226, 534.99875pt x 302.12875pt>
 File: ./diagrams/user_command.png Graphic file (type png)
 <use ./diagrams/user_command.png>
-Package pdftex.def Info: ./diagrams/user_command.png  used on input line 215.
+Package pdftex.def Info: ./diagrams/user_command.png  used on input line 187.
 (pdftex.def)             Requested size: 434.92215pt x 245.61269pt.
- [11 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/user_command.png>]
-<./diagrams/shutdown.png, id=87, 515.9275pt x 302.12875pt>
-File: ./diagrams/shutdown.png Graphic file (type png)
-<use ./diagrams/shutdown.png>
-Package pdftex.def Info: ./diagrams/shutdown.png  used on input line 235.
-(pdftex.def)             Requested size: 434.91127pt x 254.68538pt.
-) [12 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/shutdown.png>]
+) [12
+
+ </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/user_command.png>]
 \openout2 = `3OtherDesignConsiderations.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/3OtherDesignConsiderations.tex
@@ -538,7 +656,7 @@ Chapter 3.
 
 
 ]
-<./diagrams/kernel_arch.png, id=96, 2427.0675pt x 1602.98875pt>
+<./diagrams/kernel_arch.png, id=242, 2427.0675pt x 1602.98875pt>
 File: ./diagrams/kernel_arch.png Graphic file (type png)
 <use ./diagrams/kernel_arch.png>
 Package pdftex.def Info: ./diagrams/kernel_arch.png  used on input line 49.
@@ -560,20 +678,29 @@ Chapter 4.
 
 
 
-] (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.aux (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_certificate.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Acknowledgment.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Abstract.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Nomenclature.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/1Introduction.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/2DesignDiagrams.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/3OtherDesignConsiderations.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.aux)) ) 
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 103.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 103.
+ (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.aux (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_certificate.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Acknowledgment.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Abstract.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/0Nomenclature.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/1Introduction.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/2DesignDiagrams.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/3OtherDesignConsiderations.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux) (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 103.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 103.
+Package rerunfilecheck Info: File `"project template".out' has not changed.
+(rerunfilecheck)             Checksum: 3A0EC0C13F030D7C7AB55D4955030838;977.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 103.
+ ) 
 Here is how much of TeX's memory you used:
- 6272 strings out of 482854
- 100444 string characters out of 5956881
- 379486 words of memory out of 5000000
- 21425 multiletter control sequences out of 15000+600000
- 545529 words of font info for 66 fonts, out of 8000000 for 9000
+ 10232 strings out of 482854
+ 163663 string characters out of 5956881
+ 465713 words of memory out of 5000000
+ 25203 multiletter control sequences out of 15000+600000
+ 544924 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,12n,82p,850b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,82p,642b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.pdf" (27 pages, 435966 bytes).
+Output written on "/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.pdf" (26 pages, 418580 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

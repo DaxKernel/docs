@@ -1,0 +1,53 @@
+
+\chapter{Introduction}\label{chapter:Introduction}
+
+
+\indent{
+The Kernel is the fundamental interconnect between hardware and software of a computer system. 
+Writing a kernel (kernel programming) is considered to be a difficult endeavor because development has to start from a bare metal state. 
+DAX OS is a minimal 32-bit hobbyist operating system that can be used to provide a gentle introduction to students who wish to explore the domain of systems programming.
+
+The project is open source and licensed under GNU General Public License v3.0 to ensure unrestricted access and complete transparency. 
+DAX OS comes with a terminal driver, keyboard and mouse driver and basic memory management.
+The project also uses appropriate development practises such as unit-testing and version control.}
+
+Some key facts about this project are:
+\begin{itemize}
+	\item Source code is hosted at \url{https://github.com/DaxKernel/OS}.
+	\item About 2500 lines of code only
+	\item 32-bit
+	\item Low resource consumption
+\end{itemize}
+
+\newpage
+\section{Objectives}\label{section:Objectives}
+We propose to build a 32-bit kernel that has the following functionality:
+\begin{enumerate}
+	
+	\item \textbf{Keyboard Driver} \\
+	Dax-OS will include a fully functional PS/2 keyboard driver. The PS/2 keyboard driver will convert scan-codes generated when the user presses a key on the keyboard to an integer character code. It must be noted that all keyboards practically used in modern day utilize the USB standard. We stick with the PS/2 protocol because the USB protocol is massive and difficult to implement. However there are practically no disadvantages from such a decision because most motherboards will emulate USB keyboards as PS/2 keyboards.
+	
+	\item \textbf{Mouse Driver} \\
+	Similar to the keyboard driver, the operating system will also contain a functional mouse driver. The mouse can be utilized to move the terminal window up and down.
+	
+	\item \textbf{Terminal Display Driver} \\
+	DaxOS is a terminal based operating system i.e it does not support windowing.
+	The display support will be implemented using VGA text-mode and real-mode.
+	
+	\item \textbf{Basic Memory Management} \\
+	DaxOS will use a flat memory model. Since it is an 32-bit operating system, it will support at most 4GB of addressable memory. A custom memory allocator will also be implemented.
+
+	\item \textbf{Graphics Support} \\
+	DaxOS will provide basic graphics capability using the above mentioned VGA real-mode to draw primitive shapes with the available 16 colors. 
+\end{enumerate}
+
+\section{Technology Stack} \label{section:Technology Stack}
+The bulk of the operating system is written in the C programming language. Certain functionality such as writing data to ports and loading tables (IDT, GDT) are implemented using either GCC inline assembly or using normal x86 assembly. 
+
+The project uses the GCC cross-compiler \& binutils to target the generic i686 platform; which is a generic 32-bit Intel P6 architecture. The GNU Assembler and Linker are also used. The assembly syntax style used is AT\&T.
+
+The entire compilation process is driven using GNU Make which uses Makefiles to build the project. The compilation is initiated using BASH shell scripts. The kernel is tested using the qemu-i386 emulator and is developed on a stable Xubuntu distribution. 
+
+DAX OS uses git as its version control system of choice. The git repository is uploaded on Github and every new feature is developed on its own separate branch. Team communication and coordination are actualized using discord with Github integration enabled.
+
+

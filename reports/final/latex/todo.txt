@@ -17,8 +17,6 @@
 	5.2 Setting up Makefile
 	5.2 Writing shell scripts
 
-6. Coding Convention
-
 7. VGA Display Driver
 
 8. Setting up Interrupts
