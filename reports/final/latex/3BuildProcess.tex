@@ -1,0 +1,77 @@
+\chapter{Build Process}\label{chapter:Build Process}
+
+\section{Overview}\label{section:Overview}
+
+DaxOS requires a certain number of tools for the build process:
+\begin{itemize}
+    \item \textbf{Cross-compiler}:\\
+        This is a special kind of compiler that can output binaries for a different kind of computer architecture
+        than the one in which it resides.
+
+    \item \textbf{Binutils}:\\
+        This contains other tools such as the assembler and linker.\\
+        It also contains an archiver used to produce libraries.
+
+    \item \textbf{Emulator}:\\
+        Since an OS cannot be run as easily as other types of software, an emulator is used to accelerate the code-build-debug cycle.
+
+    \item \textbf{Linux}:\\
+        Although this is not a strict requirement, most of the tools specified above are easily available on Linux. \\
+        Other OS such as Window can still be used although it is more time-consuming and non-intuitive.
+\end{itemize}
+
+\section{Building cross-compiler and binutils}\label{section:Building cross-compiler and binutil}
+
+These tools cannot be downloaded as as binary package. Instead they must be compiled from source.
+The buld process for these tools is somewhat complicated.\\
+However in summary, the steps to be followed are:
+\begin{enumerate}
+    \item Download respective source files from the GNU website.
+
+    \item Install the necessary dependencies using the package manager.
+    For example on debian based distributions, the \textit{apt} package manager is used as follows:
+    \begin{lstlisting}
+    sudo apt install build-essentials, bison, flex, libgmp3-dev ...
+    \end{lstlisting}
+
+    \item Add path variables:
+    \begin{lstlisting}
+    export PREFIX="$HOME/opt/cross"
+    export TARGET=i686-elf
+    export PATH="$PREFIX/bin:$PATH"
+    \end{lstlisting}
+
+    \item Run configure scripts
+    
+    \item Issue make-install commands as follows:
+    \begin{lstlisting}
+        make all-gcc
+        make all-target-libgcc
+        make install-gcc
+        make install-target-libgcc
+    \end{lstlisting}
+
+    \item Add newly compiled compiler binaries to \$PATH variable.
+
+\end{enumerate}
+\pagebreak
+
+\section{Setting up the emulator}\label{section:Setting up the emulator}
+DaxOS uses \textit{qemu} as its default and preferred emulator.\\
+Qemu is fast, open-source and can be easily run from the terminal.
+It can be easily installed using:
+\begin{lstlisting}
+    sudo apt install qemu-system-i386
+\end{lstlisting}
+
+\section{Overview of shell-scripts}\label{section:Overview of shell-script}
+Building DaxOS is a complicated process that involves running many different commands
+with a large number of optional parameters and flags. Therefore to make the build process easier,
+DaxOS comes with a set of shellscript wrappers to automate the heavy build process.
+With the shellscript, compiling the OS is as easy as invoking:
+\begin{lstlisting}
+    .\build.sh
+\end{lstlisting}
+
+Other available shellscripts and their functionalities were introduced in the Design Diagrams chapter.
+

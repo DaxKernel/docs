@@ -8,10 +8,10 @@
 \BOOKMARK [1][-]{section.2.1}{Use-case diagram}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.2}{Activity Diagram}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.3}{Sequence Diagram}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Other Design Considerations}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Kernel Architecture}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Build Process}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{Keyboard Design Decisions}{chapter.3}% 14
-\BOOKMARK [1][-]{section.3.4}{Memory Segmentation}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.3}{Build Process}{}% 11
+\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.2}{Building cross-compiler and binutils}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.3}{Setting up the emulator}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.4}{Overview of shell-scripts}{chapter.3}% 15
 \BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 16
 \BOOKMARK [0][-]{chapter.4}{REFERENCES}{}% 17
