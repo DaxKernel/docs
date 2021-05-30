@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  30 MAY 2021 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  30 MAY 2021 20:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -727,7 +727,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 \openout2 = `Thesis_cover_outside.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Thesis_cover_outside.tex
-<mbcetlogo-eps-converted-to.pdf, id=122, 479.7925pt x 446.66875pt>
+<mbcetlogo-eps-converted-to.pdf, id=138, 479.7925pt x 446.66875pt>
 File: mbcetlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use mbcetlogo-eps-converted-to.pdf>
 Package pdftex.def Info: mbcetlogo-eps-converted-to.pdf  used on input line 43.
@@ -825,7 +825,7 @@ Chapter 2.
 
 
 ]
-<./diagrams/use-case.png, id=244, 643.40375pt x 303.1325pt>
+<./diagrams/use-case.png, id=268, 643.40375pt x 303.1325pt>
 File: ./diagrams/use-case.png Graphic file (type png)
 <use ./diagrams/use-case.png>
 Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
@@ -835,41 +835,37 @@ Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5] [6 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/use-case.png>] [7]
-<./diagrams/activity.png, id=264, 639.38875pt x 466.74374pt>
+<./diagrams/activity.png, id=291, 639.38875pt x 466.74374pt>
 File: ./diagrams/activity.png Graphic file (type png)
 <use ./diagrams/activity.png>
-Package pdftex.def Info: ./diagrams/activity.png  used on input line 141.
+Package pdftex.def Info: ./diagrams/activity.png  used on input line 140.
 (pdftex.def)             Requested size: 434.90543pt x 317.47412pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8] [9 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/activity.png>]
-<./diagrams/kbd_driver.png, id=277, 534.99875pt x 362.35374pt>
+ [8 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/activity.png>]
+<./diagrams/kbd_driver.png, id=297, 534.99875pt x 362.35374pt>
 File: ./diagrams/kbd_driver.png Graphic file (type png)
 <use ./diagrams/kbd_driver.png>
-Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 179.
+Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 178.
 (pdftex.def)             Requested size: 434.92215pt x 294.57204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10
+[9
 
-] [11 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_driver.png>]
-<./diagrams/user_command.png, id=296, 534.99875pt x 302.12875pt>
+] [10 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_driver.png>]
+<./diagrams/user_command.png, id=316, 534.99875pt x 302.12875pt>
 File: ./diagrams/user_command.png Graphic file (type png)
 <use ./diagrams/user_command.png>
-Package pdftex.def Info: ./diagrams/user_command.png  used on input line 187.
+Package pdftex.def Info: ./diagrams/user_command.png  used on input line 186.
 (pdftex.def)             Requested size: 434.92215pt x 245.61269pt.
-) [12
+) [11
 
  </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/user_command.png>]
 \openout2 = `3BuildProcess.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/3BuildProcess.tex
 Chapter 3.
-[13
+[12
 
 
 
@@ -877,7 +873,7 @@ Chapter 3.
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 39.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [14] [15] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+) [13] [14] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
@@ -888,12 +884,12 @@ Overfull \hbox (48.97096pt too wide) in paragraph at lines 113--113
 [] 
  []
 
-) [16]
+) [15]
 \openout2 = `VGADisplay.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/VGADisplay.tex
 Chapter 4.
-[17
+[16
 
 
 
@@ -907,53 +903,71 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-<./diagrams/vga_code.png, id=361, 1110.0672pt x 100.2144pt>
+<./diagrams/vga_code.png, id=380, 1110.0672pt x 100.2144pt>
 File: ./diagrams/vga_code.png Graphic file (type png)
 <use ./diagrams/vga_code.png>
 Package pdftex.def Info: ./diagrams/vga_code.png  used on input line 49.
 (pdftex.def)             Requested size: 434.88931pt x 39.26083pt.
- [18 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/vga_code.png (PNG copy)>]
-<./diagrams/vga.png, id=372, 741.0084pt x 336.2964pt>
+ [17 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/vga_code.png (PNG copy)>]
+<./diagrams/vga.png, id=392, 741.0084pt x 336.2964pt>
 File: ./diagrams/vga.png Graphic file (type png)
 <use ./diagrams/vga.png>
 Package pdftex.def Info: ./diagrams/vga.png  used on input line 69.
 (pdftex.def)             Requested size: 434.89587pt x 197.37146pt.
-) [19 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/vga.png (PNG copy)>]
+) [18 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/vga.png (PNG copy)>]
 \openout2 = `Interrupts.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Interrupts.tex
 Chapter 5.
-[20
+[19
 
 
 
-] [21]
+] [20]
 Underfull \hbox (badness 10000) in paragraph at lines 64--67
 
  []
 
-[22]) [23]
+[21]) [22]
 \openout2 = `Keyboard.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Keyboard.tex
 Chapter 6.
-) [24
+[23
 
 
 
 ]
+<./diagrams/kbd_port.png, id=487, 347.2975pt x 135.50626pt>
+File: ./diagrams/kbd_port.png Graphic file (type png)
+<use ./diagrams/kbd_port.png>
+Package pdftex.def Info: ./diagrams/kbd_port.png  used on input line 45.
+(pdftex.def)             Requested size: 200.75436pt x 78.32901pt.
+<./diagrams/kbd_status.png, id=488, 1138.2525pt x 488.82625pt>
+File: ./diagrams/kbd_status.png Graphic file (type png)
+<use ./diagrams/kbd_status.png>
+Package pdftex.def Info: ./diagrams/kbd_status.png  used on input line 52.
+(pdftex.def)             Requested size: 351.30885pt x 150.87073pt.
+ [24 </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_port.png> </mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/./diagrams/kbd_status.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 82.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+) [25]
 \openout2 = `4Conclusion.aux'.
 
  (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.tex
 Chapter 7.
-) [25
+) [26
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.tex) [26
+ (/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.tex) [27
 
 
 
@@ -965,7 +979,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `"project template".out' has not changed.
-(rerunfilecheck)             Checksum: DDF8D9B79917D99BF7DEFC7113007195;1730.
+(rerunfilecheck)             Checksum: 326C3232F7355814A920159ED0D208BF;2006.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -973,18 +987,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 22253 strings out of 482854
- 403866 string characters out of 5956881
- 874747 words of memory out of 5000000
- 36847 multiletter control sequences out of 15000+600000
+ 22333 strings out of 482854
+ 405283 string characters out of 5956881
+ 875944 words of memory out of 5000000
+ 36901 multiletter control sequences out of 15000+600000
  545995 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,11n,97p,1047b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1095.600pk> </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.pdf" (34 pages, 387408 bytes).
+ </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1095.600pk> </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "/mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/project template.pdf" (35 pages, 469851 bytes).
 PDF statistics:
- 577 PDF objects out of 1000 (max. 8388607)
- 507 compressed objects within 6 object streams
- 208 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 

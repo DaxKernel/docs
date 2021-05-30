@@ -25,5 +25,9 @@
 \BOOKMARK [1][-]{section.5.2}{Loading interrupts}{chapter.5}% 25
 \BOOKMARK [0][-]{chapter.6}{Keyboard Driver}{}% 26
 \BOOKMARK [1][-]{section.6.1}{Writing and reading from ports}{chapter.6}% 27
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 28
-\BOOKMARK [0][-]{chapter.7}{REFERENCES}{}% 29
+\BOOKMARK [1][-]{section.6.2}{Overview}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.3}{Understanding Keyboard ports}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.4}{Scan code to character conversion}{chapter.6}% 30
+\BOOKMARK [1][-]{section.6.5}{Keyboard Driver API}{chapter.6}% 31
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
+\BOOKMARK [0][-]{chapter.7}{REFERENCES}{}% 33
