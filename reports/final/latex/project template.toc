@@ -1,5 +1,5 @@
-\contentsline {chapter}{List of Figures}{iv}{chapter*.5}%
-\contentsline {chapter}{Nomenclature}{v}{chapter*.6}%
+\contentsline {chapter}{List of Figures}{v}{chapter*.5}%
+\contentsline {chapter}{Nomenclature}{vi}{chapter*.6}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objectives}{2}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Limitations}{3}{section.1.2}%
@@ -14,5 +14,16 @@
 \contentsline {section}{\numberline {3.3}Setting up the emulator}{15}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Overview of shell-scripts}{15}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Makefile}{15}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Conclusion}{17}{chapter.4}%
-\contentsline {chapter}{REFERENCES}{18}{chapter.4}%
+\contentsline {chapter}{\numberline {4}VGA Display Driver}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Overview}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Printing text to the screen}{18}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Display Driver API}{19}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Interrupts}{20}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Programming Interrupts}{21}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Creating the IDT}{21}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Creating the ISR}{22}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Loading interrupts}{23}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Keyboard Driver}{24}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Writing and reading from ports}{24}{section.6.1}%
+\contentsline {chapter}{\numberline {7}Conclusion}{25}{chapter.7}%
+\contentsline {chapter}{REFERENCES}{26}{chapter.7}%

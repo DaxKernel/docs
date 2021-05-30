@@ -1,0 +1,28 @@
+\chapter{Keyboard Driver}\label{chapter:Keyboard Driver}
+
+\section{Writing and reading from ports}\label{section:Writing and reading from ports}
+
+Before writing a device driver, the functionality to communicate with different I/O ports needs to be implemented.
+This is done in assembly using the \textbf{outb} and \textbf{inb} instructions.
+The code can be written using extended asm:
+
+\begin{lstlisting}
+    // Read a byte from port
+    inline unsigned char inportb(unsigned int port)
+    {
+        unsigned char ret;
+        asm volatile("inb %%dx,%%al"
+                    : "=a"(ret)
+                    : "d"(port));
+        return ret;
+    }
+
+    // Write value to port
+    inline void outportb(unsigned int port, unsigned int value)
+    {
+        asm volatile("outb %%al,%%dx"
+                    :
+                    : "d"(port), "a"(value));
+    }
+\end{lstlisting}
+

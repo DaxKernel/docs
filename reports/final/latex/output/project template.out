@@ -14,5 +14,16 @@
 \BOOKMARK [1][-]{section.3.3}{Setting up the emulator}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.4}{Overview of shell-scripts}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.5}{Makefile}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 17
-\BOOKMARK [0][-]{chapter.4}{REFERENCES}{}% 18
+\BOOKMARK [0][-]{chapter.4}{VGA Display Driver}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Printing text to the screen}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{Display Driver API}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Interrupts}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Programming Interrupts}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.1.1}{Creating the IDT}{section.5.1}% 23
+\BOOKMARK [2][-]{subsection.5.1.2}{Creating the ISR}{section.5.1}% 24
+\BOOKMARK [1][-]{section.5.2}{Loading interrupts}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter.6}{Keyboard Driver}{}% 26
+\BOOKMARK [1][-]{section.6.1}{Writing and reading from ports}{chapter.6}% 27
+\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 28
+\BOOKMARK [0][-]{chapter.7}{REFERENCES}{}% 29

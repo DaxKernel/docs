@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  29 MAY 2021 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  30 MAY 2021 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -782,8 +782,12 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 (output/project template.aux (output/Thesis_cover_outside.aux)
 (output/Thesis_certificate.aux) (output/0Acknowledgment.aux)
 (output/0Abstract.aux) (output/0Nomenclature.aux) (output/1Introduction.aux)
-(output/2DesignDiagrams.aux) (output/3BuildProcess.aux) (output/4Conclusion.aux
-) (output/References.aux))
+(output/2DesignDiagrams.aux) (output/3BuildProcess.aux) (output/VGADisplay.aux
+
+LaTeX Warning: Label `section:Overview' multiply defined.
+
+) (output/Interrupts.aux) (output/Keyboard.aux) (output/4Conclusion.aux)
+(output/References.aux))
 \openout1 = `"project template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -893,7 +897,7 @@ ABD: EveryShipout initializing macros
 \openout2 = `Thesis_cover_outside.aux'.
 
  (./Thesis_cover_outside.tex
-<mbcetlogo-eps-converted-to.pdf, id=78, 479.7925pt x 446.66875pt>
+<mbcetlogo-eps-converted-to.pdf, id=122, 479.7925pt x 446.66875pt>
 File: mbcetlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use mbcetlogo-eps-converted-to.pdf>
 Package pdftex.def Info: mbcetlogo-eps-converted-to.pdf  used on input line 43.
@@ -951,25 +955,25 @@ l.80 \include{Thesis_certificate}
 (./0Abstract.tex) [2
 
 
-] (output/project template.toc)
+] (output/project template.toc [3
+
+
+])
 \tf@toc=\write8
 \openout8 = `"project template.toc"'.
 
- [3
-
-
-]
+ [4]
 (output/project template.lof)
 \tf@lof=\write9
 \openout9 = `"project template.lof"'.
 
- [4
+ [5
 
 
 ]
 \openout2 = `0Nomenclature.aux'.
 
- (./0Nomenclature.tex) [5
+ (./0Nomenclature.tex) [6
 
 
 ]
@@ -1004,7 +1008,7 @@ Chapter 2.
 
 
 ]
-<./diagrams/use-case.png, id=181, 643.40375pt x 303.1325pt>
+<./diagrams/use-case.png, id=244, 643.40375pt x 303.1325pt>
 File: ./diagrams/use-case.png Graphic file (type png)
 <use ./diagrams/use-case.png>
 Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
@@ -1014,7 +1018,7 @@ Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5] [6 <./diagrams/use-case.png>] [7]
-<./diagrams/activity.png, id=201, 639.38875pt x 466.74374pt>
+<./diagrams/activity.png, id=264, 639.38875pt x 466.74374pt>
 File: ./diagrams/activity.png Graphic file (type png)
 <use ./diagrams/activity.png>
 Package pdftex.def Info: ./diagrams/activity.png  used on input line 141.
@@ -1024,7 +1028,7 @@ Package pdftex.def Info: ./diagrams/activity.png  used on input line 141.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [8] [9 <./diagrams/activity.png>]
-<./diagrams/kbd_driver.png, id=214, 534.99875pt x 362.35374pt>
+<./diagrams/kbd_driver.png, id=277, 534.99875pt x 362.35374pt>
 File: ./diagrams/kbd_driver.png Graphic file (type png)
 <use ./diagrams/kbd_driver.png>
 Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 179.
@@ -1036,7 +1040,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [10
 
 ] [11 <./diagrams/kbd_driver.png>]
-<./diagrams/user_command.png, id=232, 534.99875pt x 302.12875pt>
+<./diagrams/user_command.png, id=296, 534.99875pt x 302.12875pt>
 File: ./diagrams/user_command.png Graphic file (type png)
 <use ./diagrams/user_command.png>
 Package pdftex.def Info: ./diagrams/user_command.png  used on input line 187.
@@ -1073,42 +1077,102 @@ Overfull \hbox (48.97096pt too wide) in paragraph at lines 113--113
  []
 
 ) [16]
+\openout2 = `VGADisplay.aux'.
+
+ (./VGADisplay.tex
+Chapter 4.
+[17
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 28--30
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+<./diagrams/vga_code.png, id=361, 1110.0672pt x 100.2144pt>
+File: ./diagrams/vga_code.png Graphic file (type png)
+<use ./diagrams/vga_code.png>
+Package pdftex.def Info: ./diagrams/vga_code.png  used on input line 49.
+(pdftex.def)             Requested size: 434.88931pt x 39.26083pt.
+ [18 <./diagrams/vga_code.png (PNG copy)>]
+<./diagrams/vga.png, id=372, 741.0084pt x 336.2964pt>
+File: ./diagrams/vga.png Graphic file (type png)
+<use ./diagrams/vga.png>
+Package pdftex.def Info: ./diagrams/vga.png  used on input line 69.
+(pdftex.def)             Requested size: 434.89587pt x 197.37146pt.
+) [19 <./diagrams/vga.png (PNG copy)>]
+\openout2 = `Interrupts.aux'.
+
+
+(./Interrupts.tex
+Chapter 5.
+[20
+
+
+
+] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 64--67
+
+ []
+
+[22]) [23]
+\openout2 = `Keyboard.aux'.
+
+ (./Keyboard.tex
+Chapter 6.
+) [24
+
+
+
+]
 \openout2 = `4Conclusion.aux'.
 
  (./4Conclusion.tex
-Chapter 4.
-) [17
+Chapter 7.
+) [25
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (./References.tex) [18
+ (./References.tex) [26
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 124.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 124.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (output/project template.aux
 (output/Thesis_cover_outside.aux) (output/Thesis_certificate.aux)
 (output/0Acknowledgment.aux) (output/0Abstract.aux) (output/0Nomenclature.aux)
 (output/1Introduction.aux) (output/2DesignDiagrams.aux)
-(output/3BuildProcess.aux) (output/4Conclusion.aux) (output/References.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 124.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 124.
+(output/3BuildProcess.aux) (output/VGADisplay.aux) (output/Interrupts.aux)
+(output/Keyboard.aux) (output/4Conclusion.aux) (output/References.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `"project template".out' has not changed.
-(rerunfilecheck)             Checksum: 9DF7BD08BB9B1DA1C022E4BB41BD3B3D;1034.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 124.
+(rerunfilecheck)             Checksum: DDF8D9B79917D99BF7DEFC7113007195;1730.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 21889 strings out of 482854
- 391455 string characters out of 5956881
- 869470 words of memory out of 5000000
- 36608 multiletter control sequences out of 15000+600000
- 545390 words of font info for 66 fonts, out of 8000000 for 9000
+ 22253 strings out of 482854
+ 396749 string characters out of 5956881
+ 874747 words of memory out of 5000000
+ 36847 multiletter control sequences out of 15000+600000
+ 545995 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,11n,97p,973b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/rmidhunsuresh/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt
@@ -1126,10 +1190,10 @@ onts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt12.pfb>
-Output written on "output/project template.pdf" (25 pages, 349211 bytes).
+Output written on "output/project template.pdf" (34 pages, 387335 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 322 compressed objects within 4 object streams
- 108 named destinations out of 1000 (max. 500000)
- 182 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 577 PDF objects out of 1000 (max. 8388607)
+ 507 compressed objects within 6 object streams
+ 208 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 

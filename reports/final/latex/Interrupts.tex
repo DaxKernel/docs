@@ -1,0 +1,121 @@
+\chapter{Interrupts}\label{chapter:Interrupts}
+Interrupts provide a quick and easy way for different parts of the OS to signal that important events 
+that need attention have occurred. The basic idea here is that when something important that needs to 
+be immediately handled occurs, the CPU stops what it is currently doing and calls another function.
+This function is called an Interrupt Service Routine.
+
+\vspace{1cm}
+There are a total of 256 interrupts in the x86 hardware architecture. Of this, the first 32 are CPU exceptions.
+The interrupts from 32-47 deal with various parts of the system such as keyboard and mouse. 
+The remaining interrupts are user-defined.
+
+\vspace{1cm}
+When an interrupt occurs the CPU looks up the corresponding ISR from a table called Interrupt Descriptor Table.
+It then branches to that function. ISRs are different from other functions in that they use the \textbf{iret} instruction
+to return instead of the commonly used \textbf{ret} instruction. The difference is that while the latter only restores the IP,
+the former also restores the flags and CS registers.
+\pagebreak
+
+\section{Programming Interrupts}\label{section:Programming Interrupts}
+
+\subsection{Creating the IDT}\label{subsection:Creating the IDT}
+An overview of the implementation is as follows:
+\begin{enumerate}
+    \item Each value in the IDT is represented by a C struct.
+    \item The IVT itself is simply an array of C structs.
+\end{enumerate}
+
+Thus the C code for the IDT is as follows:
+\begin{lstlisting}
+    struct IDT_entry
+    {
+        uint16_t offset_lowerbits;
+        uint16_t selector;
+        unsigned char zero;
+        unsigned char type_attr;
+        uint16_t offset_higherbits;
+    } IDT[IDT_SIZE];
+\end{lstlisting}
+
+\vspace{0.5cm}
+The struct fields are described as follows:
+\begin{itemize}
+    \item \textbf{offset\_higherbits, offset\_lowerbits}:\\
+    These together form the memory address of the ISR.
+    \item \textbf{selector}:\\
+    This is a code segment selector defined in the Global Descriptor Table (GDT).
+    \item \textbf{zero}:\\
+    This has to be zero by convention.
+    \item \textbf{type\_attr}:\\
+    This decides the type of interrupt gate (interrupt gate or task gate).
+\end{itemize}
+\pagebreak
+
+
+\subsection{Creating the ISR}\label{subsection:Creating the ISR}
+
+Now that the IDT has been created interrupt handlers can be created.\\
+There are two options to proceed:
+\begin{itemize}
+    \item Use x86 assembly
+    \item Use C with GCC extensions
+\end{itemize}
+
+The second choice is preferred because it gives the opportunity to write cleaner code.\\
+However it must be noted that using C by itself is not an option because functions in C always end with the ret instruction.
+GCC compiler provides additions to the C programming language that can sometimes be helpful in scenarios such as this.\\
+
+Some C code to make the implementation easier is written:
+
+\begin{lstlisting}
+    struct interrupt_frame
+    {
+        uint32_t error_code;
+        uint32_t ip;
+        uint32_t cs;
+        uint32_t flags;
+    };
+    #define IRQ_HANDLER __attribute__((interrupt)) void
+    #define IRQ_ARG __attribute__((unused)) struct interrupt_frame *frame
+\end{lstlisting}
+
+The interrupt attribute is an GCC extension that will force the function to return with the \textbf{iret} instruction.
+
+This setup makes it easy to create new ISRs in a very clean and readable fashion. For instance to create a ISR handler we can 
+simply do:
+\begin{lstlisting}
+    IRQ_HANDLER gameControllerISR(IRQ_ARG)
+    {
+        // Logic here
+    }
+\end{lstlisting}
+\pagebreak
+
+\section{Loading interrupts}\label{section:Loading interrupts}
+The final step is to tell the CPU where to find the Interrupt Descriptor Table.
+
+\vspace{1cm}
+This is done by the load\_idt() function:
+\begin{lstlisting}
+    static inline void load_idt()
+    {
+        typedef struct __attribute__((packed))
+        {
+            uint16_t limit;
+            uintptr_t start;
+        } IDT_REPRESENTATION;
+
+        const IDT_REPRESENTATION rep = {(sizeof(struct IDT_entry) * (IDT_SIZE - 1)), (uintptr_t)IDT};
+
+        asm("lidt %0; sti;"
+            : /*No Output*/
+            : "m"(*(IDT_REPRESENTATION *)&rep));
+    }
+\end{lstlisting}
+
+\vspace{1cm}
+The \textbf{lidt} instruction indicates the location of the IDT table to the CPU. This information if encoded as a C struct which
+contains the starting address and the offset that must be added to reach the last IDT entry.
+Extended asm is used to inline assembly within the C code. The packed attribute instructs GCC to not add any extra padding to the 
+struct.\\
+Finally \textbf{sti} instruction is used to enable interrupts.
