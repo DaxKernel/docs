@@ -32,5 +32,13 @@
 \BOOKMARK [0][-]{chapter.7}{Unit Testing}{}% 32
 \BOOKMARK [1][-]{section.7.1}{Challenge}{chapter.7}% 33
 \BOOKMARK [1][-]{section.7.2}{Introducing DUnit}{chapter.7}% 34
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 35
-\BOOKMARK [0][-]{chapter.8}{REFERENCES}{}% 36
+\BOOKMARK [0][-]{chapter.8}{Standard C Library}{}% 35
+\BOOKMARK [1][-]{section.8.1}{Implementation Summary}{chapter.8}% 36
+\BOOKMARK [0][-]{chapter.9}{Memory Management}{}% 37
+\BOOKMARK [1][-]{section.9.1}{Physical Memory Allocator}{chapter.9}% 38
+\BOOKMARK [2][-]{subsection.9.1.1}{Memory Map}{section.9.1}% 39
+\BOOKMARK [2][-]{subsection.9.1.2}{Keeping Track of Memory}{section.9.1}% 40
+\BOOKMARK [2][-]{subsection.9.1.3}{API}{section.9.1}% 41
+\BOOKMARK [1][-]{section.9.2}{Porting Liballoc}{chapter.9}% 42
+\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 43
+\BOOKMARK [0][-]{chapter.10}{REFERENCES}{}% 44

@@ -264,6 +264,10 @@ INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Keyboard.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.aux
@@ -417,6 +421,12 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 OUTPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.tex
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.tex
+OUTPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.tex
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.tex
+OUTPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.tex
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.tex
 OUTPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.tex
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.tex
@@ -448,6 +458,10 @@ INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/Keyboard.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/UnitTesting.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/CLibrary.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.aux
+INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/MemoryManagement.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/4Conclusion.aux
 INPUT /mnt/F2D2CA3CD2CA0537/Textbooks/S7/final_year_project/reports/final/latex/References.aux

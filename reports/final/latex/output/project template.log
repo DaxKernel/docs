@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  5 JUN 2021 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  5 JUN 2021 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -787,7 +787,8 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 LaTeX Warning: Label `section:Overview' multiply defined.
 
 ) (output/Interrupts.aux) (output/Keyboard.aux) (output/UnitTesting.aux)
-(output/4Conclusion.aux) (output/References.aux))
+(output/CLibrary.aux) (output/MemoryManagement.aux) (output/4Conclusion.aux)
+(output/References.aux))
 \openout1 = `"project template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -897,7 +898,7 @@ ABD: EveryShipout initializing macros
 \openout2 = `Thesis_cover_outside.aux'.
 
  (./Thesis_cover_outside.tex
-<mbcetlogo-eps-converted-to.pdf, id=150, 479.7925pt x 446.66875pt>
+<mbcetlogo-eps-converted-to.pdf, id=182, 479.7925pt x 446.66875pt>
 File: mbcetlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use mbcetlogo-eps-converted-to.pdf>
 Package pdftex.def Info: mbcetlogo-eps-converted-to.pdf  used on input line 43.
@@ -1008,7 +1009,7 @@ Chapter 2.
 
 
 ]
-<./diagrams/use-case.png, id=283, 643.40375pt x 303.1325pt>
+<./diagrams/use-case.png, id=324, 643.40375pt x 303.1325pt>
 File: ./diagrams/use-case.png Graphic file (type png)
 <use ./diagrams/use-case.png>
 Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
@@ -1018,13 +1019,13 @@ Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5] [6 <./diagrams/use-case.png>] [7]
-<./diagrams/activity.png, id=306, 639.38875pt x 466.74374pt>
+<./diagrams/activity.png, id=347, 639.38875pt x 466.74374pt>
 File: ./diagrams/activity.png Graphic file (type png)
 <use ./diagrams/activity.png>
 Package pdftex.def Info: ./diagrams/activity.png  used on input line 140.
 (pdftex.def)             Requested size: 434.90543pt x 317.47412pt.
  [8 <./diagrams/activity.png>]
-<./diagrams/kbd_driver.png, id=312, 534.99875pt x 362.35374pt>
+<./diagrams/kbd_driver.png, id=353, 534.99875pt x 362.35374pt>
 File: ./diagrams/kbd_driver.png Graphic file (type png)
 <use ./diagrams/kbd_driver.png>
 Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 178.
@@ -1036,7 +1037,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [9
 
 ] [10 <./diagrams/kbd_driver.png>]
-<./diagrams/user_command.png, id=331, 534.99875pt x 302.12875pt>
+<./diagrams/user_command.png, id=371, 534.99875pt x 302.12875pt>
 File: ./diagrams/user_command.png Graphic file (type png)
 <use ./diagrams/user_command.png>
 Package pdftex.def Info: ./diagrams/user_command.png  used on input line 186.
@@ -1092,13 +1093,13 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-<./diagrams/vga_code.png, id=395, 1110.0672pt x 100.2144pt>
+<./diagrams/vga_code.png, id=436, 1110.0672pt x 100.2144pt>
 File: ./diagrams/vga_code.png Graphic file (type png)
 <use ./diagrams/vga_code.png>
 Package pdftex.def Info: ./diagrams/vga_code.png  used on input line 49.
 (pdftex.def)             Requested size: 434.88931pt x 39.26083pt.
  [17 <./diagrams/vga_code.png (PNG copy)>]
-<./diagrams/vga.png, id=407, 741.0084pt x 336.2964pt>
+<./diagrams/vga.png, id=448, 741.0084pt x 336.2964pt>
 File: ./diagrams/vga.png Graphic file (type png)
 <use ./diagrams/vga.png>
 Package pdftex.def Info: ./diagrams/vga.png  used on input line 69.
@@ -1128,12 +1129,12 @@ Chapter 6.
 
 
 ]
-<./diagrams/kbd_port.png, id=502, 347.2975pt x 135.50626pt>
+<./diagrams/kbd_port.png, id=543, 347.2975pt x 135.50626pt>
 File: ./diagrams/kbd_port.png Graphic file (type png)
 <use ./diagrams/kbd_port.png>
 Package pdftex.def Info: ./diagrams/kbd_port.png  used on input line 45.
 (pdftex.def)             Requested size: 200.75436pt x 78.32901pt.
-<./diagrams/kbd_status.png, id=503, 1138.2525pt x 488.82625pt>
+<./diagrams/kbd_status.png, id=544, 1138.2525pt x 488.82625pt>
 File: ./diagrams/kbd_status.png Graphic file (type png)
 <use ./diagrams/kbd_status.png>
 Package pdftex.def Info: ./diagrams/kbd_status.png  used on input line 52.
@@ -1164,47 +1165,69 @@ frame-work called \OT1/cmr/bx/n/12 DUnit\OT1/cmr/m/n/12 .
 
 
 ]) [27]
+\openout2 = `CLibrary.aux'.
+
+ (./CLibrary.tex
+Chapter 8.
+[28
+
+
+
+]) [29]
+\openout2 = `MemoryManagement.aux'.
+
+ (./MemoryManagement.tex
+Chapter 9.
+[30
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 23--25
+
+ []
+
+[31] [32]) [33]
 \openout2 = `4Conclusion.aux'.
 
  (./4Conclusion.tex
-Chapter 8.
-) [28
+Chapter 10.
+) [34
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (./References.tex) [29
+ (./References.tex) [35
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (output/project template.aux
 (output/Thesis_cover_outside.aux) (output/Thesis_certificate.aux)
 (output/0Acknowledgment.aux) (output/0Abstract.aux) (output/0Nomenclature.aux)
 (output/1Introduction.aux) (output/2DesignDiagrams.aux)
 (output/3BuildProcess.aux) (output/VGADisplay.aux) (output/Interrupts.aux)
-(output/Keyboard.aux) (output/UnitTesting.aux) (output/4Conclusion.aux)
-(output/References.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+(output/Keyboard.aux) (output/UnitTesting.aux) (output/CLibrary.aux)
+(output/MemoryManagement.aux) (output/4Conclusion.aux) (output/References.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `"project template".out' has not changed.
-(rerunfilecheck)             Checksum: 8F474ABA6A52B66BCFA2F8B151186CBA;2174.
-
+(rerunfilecheck)             Checksum: 8EC0CEC7ED64635B0D9326AEBA2803FE;2685.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
  ) 
 Here is how much of TeX's memory you used:
- 22385 strings out of 482854
- 398974 string characters out of 5956881
- 876670 words of memory out of 5000000
- 36928 multiletter control sequences out of 15000+600000
+ 22510 strings out of 482854
+ 400884 string characters out of 5956881
+ 878264 words of memory out of 5000000
+ 37001 multiletter control sequences out of 15000+600000
  545995 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,11n,97p,973b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1224,10 +1247,10 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb>
-Output written on "output/project template.pdf" (37 pages, 472584 bytes).
+Output written on "output/project template.pdf" (43 pages, 482572 bytes).
 PDF statistics:
- 678 PDF objects out of 1000 (max. 8388607)
- 600 compressed objects within 6 object streams
- 249 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 775 PDF objects out of 1000 (max. 8388607)
+ 690 compressed objects within 7 object streams
+ 287 named destinations out of 1000 (max. 500000)
+ 410 words of extra memory for PDF output out of 10000 (max. 10000000)
 

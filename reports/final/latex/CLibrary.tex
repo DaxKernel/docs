@@ -1,0 +1,42 @@
+\chapter{Standard C Library}\label{chapter:Standard C Library}
+
+The C library which includes all the familiar functions such as printf, scanf, strlen and so on is not 
+actually a part of the C language. It is instead the responsibility of the OS to provide these primitives.\\
+DaxOS provides a partial implementation of the C library.
+
+\section{Implementation Summary}\label{section:Implementation Summary}
+
+The parts of the C library that have been implemented are listed below:
+\begin{itemize}
+    \item \textbf{stdio.h}
+    \begin{itemize}
+       \item int \textbf{printf}(const char *, ...);
+       \item int \textbf{putchar}(int);
+       \item int \textbf{puts}(const char *);
+       \item int \textbf{scanf}(const char *, ...);
+    \end{itemize}
+\pagebreak
+    \item \textbf{stdlib.h}
+    \begin{itemize}
+        \item char \textbf{*itoa}(int, char *);
+        \item char \textbf{*uitoa}(unsigned int, char *);
+        \item void \textbf{abort}(void) \_\_attribute\_\_((\_\_noreturn\_\_));
+        \item void \textbf{*malloc}(size\_t);
+        \item void \textbf{*realloc}(void *, size\_t);
+        \item void \textbf{*calloc}(size\_t, size\_t);
+        \item void \textbf{free}(void *);
+    \end{itemize}
+    \vspace{1cm}
+    \item \textbf{string.h}
+    \begin{itemize}
+        \item int \textbf{memcmp}(const void *, const void *, size\_t);
+        \item void \textbf{*memcpy}(void *\_\_restrict, const void *\_\_restrict, size\_t);
+        \item void \textbf{*memmove}(void *, const void *, size\_t);
+        \item void \textbf{*memset}(void *, int, size\_t);
+        \item size\_t \textbf{strlen}(const char *);
+        \item char \textbf{*strcpy}(char *destination, const char *source);
+        \item char \textbf{*strncpy}(char *destination, const char *source, size\_t num);
+        \item int \textbf{strcmp}(const char *p1, const char *p2);
+    \end{itemize}
+\end{itemize}
+\pagebreak
