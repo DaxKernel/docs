@@ -1,0 +1,44 @@
+\chapter{Unit Testing}\label{chapter:Unit Testing}
+
+Testing is an integral practice to ensure and verify that the code written solves the problem that it is trying to solve.
+Unit testing refers to testing the units of a program - in most cases these units are functions.
+
+\section{Challenge}\label{section:Challenge}
+
+An operating system is an example of a system software. It is difficult to write tests for such software.
+Some related difficulties are:
+
+\begin{itemize}
+    \item Most unit testing frameworks depend on an existing standard C library.
+    \item Lack of mature debugging utilities. 
+    \item Difficulty in getting test results across to developers.
+\end{itemize}
+
+\section{Introducing DUnit}\label{section:Introducing DUnit}
+
+To make testing easier, DaxOS uses a custom unit testing framework called \textbf{DUnit}.
+The implementation is minimal and based on two assertions.
+\pagebreak
+
+The API can summarized as follows:
+
+\vspace{0.5cm}
+\begin{lstlisting}
+    // Assert that a condition is true
+    void D_UNIT_ASSERT(bool condition, const char *t_name);
+
+    // Assert that a condition is false
+    void D_UNIT_ASSERT_FALSE(bool condition, const char *t_name);
+\end{lstlisting}
+\vspace{1cm}
+
+An example of an unit test written using DUnit is given below:
+\vspace{0.5cm}
+\begin{lstlisting}
+    // Ensure that malloc returns NULL if we're out of memory
+    void D_TEST_unfulfillable_request()
+    {
+        char *p = malloc(/* Quick way to get SIZE_MAX*/ (size_t)-1);
+        D_UNIT_ASSERT_FALSE(p, "MEM/UNFULFILLABLE_MEM_REQUEST");
+    }
+\end{lstlisting}

@@ -29,5 +29,8 @@
 \contentsline {section}{\numberline {6.3}Understanding Keyboard ports}{24}{section.6.3}%
 \contentsline {section}{\numberline {6.4}Scan code to character conversion}{25}{section.6.4}%
 \contentsline {section}{\numberline {6.5}Keyboard Driver API}{25}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Conclusion}{26}{chapter.7}%
-\contentsline {chapter}{REFERENCES}{27}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Unit Testing}{26}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Challenge}{26}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Introducing DUnit}{26}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Conclusion}{28}{chapter.8}%
+\contentsline {chapter}{REFERENCES}{29}{chapter.8}%

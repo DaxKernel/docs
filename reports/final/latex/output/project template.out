@@ -29,5 +29,8 @@
 \BOOKMARK [1][-]{section.6.3}{Understanding Keyboard ports}{chapter.6}% 29
 \BOOKMARK [1][-]{section.6.4}{Scan code to character conversion}{chapter.6}% 30
 \BOOKMARK [1][-]{section.6.5}{Keyboard Driver API}{chapter.6}% 31
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 32
-\BOOKMARK [0][-]{chapter.7}{REFERENCES}{}% 33
+\BOOKMARK [0][-]{chapter.7}{Unit Testing}{}% 32
+\BOOKMARK [1][-]{section.7.1}{Challenge}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.2}{Introducing DUnit}{chapter.7}% 34
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 35
+\BOOKMARK [0][-]{chapter.8}{REFERENCES}{}% 36
