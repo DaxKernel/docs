@@ -10,7 +10,7 @@
 \BOOKMARK [1][-]{section.2.3}{Sequence Diagram}{chapter.2}% 10
 \BOOKMARK [0][-]{chapter.3}{Build Process}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Building cross-compiler and binutils}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{Building the cross-compiler and binutils}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.3}{Setting up the emulator}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.4}{Overview of shell-scripts}{chapter.3}% 15
 \BOOKMARK [1][-]{section.3.5}{Makefile}{chapter.3}% 16
@@ -40,5 +40,12 @@
 \BOOKMARK [2][-]{subsection.9.1.2}{Keeping Track of Memory}{section.9.1}% 40
 \BOOKMARK [2][-]{subsection.9.1.3}{API}{section.9.1}% 41
 \BOOKMARK [1][-]{section.9.2}{Porting Liballoc}{chapter.9}% 42
-\BOOKMARK [0][-]{chapter.10}{Conclusion}{}% 43
-\BOOKMARK [0][-]{chapter.10}{REFERENCES}{}% 44
+\BOOKMARK [0][-]{chapter.10}{CPU Exceptions}{}% 43
+\BOOKMARK [1][-]{section.10.1}{Supported Exceptions}{chapter.10}% 44
+\BOOKMARK [1][-]{section.10.2}{Code Generation}{chapter.10}% 45
+\BOOKMARK [0][-]{chapter.11}{Graphics Support}{}% 46
+\BOOKMARK [1][-]{section.11.1}{Enabling Graphics}{chapter.11}% 47
+\BOOKMARK [1][-]{section.11.2}{Font Rendering}{chapter.11}% 48
+\BOOKMARK [1][-]{section.11.3}{Image Rendering}{chapter.11}% 49
+\BOOKMARK [0][-]{chapter.12}{Conclusion}{}% 50
+\BOOKMARK [0][-]{chapter.12}{REFERENCES}{}% 51

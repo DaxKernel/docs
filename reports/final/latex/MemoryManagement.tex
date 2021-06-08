@@ -49,6 +49,12 @@ We can configure multiboot to pass this information to our kernel by modifying \
 
 We can get the information of the next region by adding \textit{size} bytes to the memory address of this record.
 
+\begin{figure}[h!]
+	\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{mem_arch}
+	\caption{Memory Architecture in DaxOS}
+\end{figure}
+\clearpage
+
 \pagebreak
 \subsection{Keeping Track of Memory}\label{subsection:Keeping Track of Memory}
 
@@ -88,7 +94,7 @@ Their description is as follows:
 \section{Porting Liballoc}\label{section:Porting liballoc}
 
 Liballoc is a free and open-source memory allocator for use in hobbyist OS. 
-It provides the malloc and other related functions. However to use liballoc, DaxOS must implement four hooks.
+It provides malloc and other related functions. However to use liballoc, DaxOS must implement four hooks.
 Hooks are functions that liballoc uses internally that must be provided by the OS.
 
 \vspace{0.3cm}
@@ -104,7 +110,7 @@ Their descriptions are as follows:
 \begin{itemize}
     \item \textbf{Lock and unlock} are used to provide mutex locks.\\
     Although DaxOS is not multi-threaded it still has concurrency in the form of interrupts.
-    Therefore the lock function simply disables interrupts whereas the unlock function enables interrupts.\\
+    Therefore the lock function simply disables interrupts whereas the unlock function enables interrupts.
     This is done using the \textit{cli} and \textit{sti} instructions respectively.
     \item \textbf{alloc} function allocates multiple blocks of memory as specified in the parameter.
     \item \textbf{free} function frees multiple blocks of memory starting from the address specified in parameter.

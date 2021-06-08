@@ -1,0 +1,52 @@
+\chapter{CPU Exceptions}\label{chapter:CPU Exceptions}
+These are a kind of interrupt that signals that an exception or error has occurred. Most CPU exceptions are faults i.e they 
+are recoverable. However some CPU exceptions are aborts i.e the OS cannot continue after they occur.
+
+In DaxOS, every CPU exception leads to a kernel panic. Kernel panic involves showing a screen with the exception information
+and then stopping the OS.
+
+\section{Supported Exceptions}\label{section:Supported Exceptions}
+
+DaxOS supports the following CPU exceptions:
+\begin{itemize}
+    \item \textbf{Divide By Zero}\\
+    This occurs when a number is divide by zero.
+    \item \textbf{Debug}\\
+    This is triggered when single step mode is enabled.
+    \item \textbf{Non Maskable Interrupt}\\
+    This occurs in response to a non-recoverable hardware fault.
+    \item \textbf{Breakpoint}\\
+    This is triggered by running INT3 instruction.
+    \item \textbf{Overflow}\\
+    This occurs when the overflow bit in flag is set and INTO instruction is given.
+    \item \textbf{Bound Range Exceeded}\\
+    Occurs in response to a BOUND instruction.
+    \item \textbf{Invalid Opcode}\\
+    Triggered when a nonexistent opcode is used.
+    \item \textbf{Device Not Available}\\
+    Triggered when a Floating Point Unit is not available.
+\end{itemize}
+
+\section{Code Generation}\label{section:Code Generation}
+Code for handling two cpu exceptions are given below:
+\begin{lstlisting}
+   IRQ_HANDLER cpu_exception_0(IRQ_ARG)
+    {
+        send_eoi();
+        k_panic("Divide By Zero");
+    }
+
+    IRQ_HANDLER cpu_exception_1(IRQ_ARG)
+    {
+        send_eoi();
+        k_panic("Debug");
+    }
+\end{lstlisting}
+One obvious problem is that the code is duplicated. The two interrupt handlers are similar except for the string argument in 
+k\_panic function.
+This is a clear violation of the DRY principle which states that code must not be duplicated. 
+
+\vspace{0.4cm}
+DaxOS solves this issue by generating the duplicated code using a python script.
+The python script produces the code needed for exception handling in two files: \\exception.c and exception.h, both 
+of which can be configured to be produced at any location.

@@ -9,14 +9,14 @@ DAX OS is a minimal 32-bit hobbyist operating system that can be used to provide
 
 The project is open source and licensed under GNU General Public License v3.0 to ensure unrestricted access and complete transparency. 
 DAX OS comes with a terminal driver, keyboard and mouse driver and basic memory management.
-The project also uses appropriate development practises such as unit-testing and version control.}
+The project also uses appropriate development practices such as unit-testing and version control.}
 
 Some key facts about this project are:
 \begin{itemize}
 	\item Source code is hosted at \url{https://github.com/DaxKernel/OS}.
-	\item About 2500 lines of code only
+	\item About 2500 lines of code only.
 	\item 32-bit
-	\item Low resource consumption
+	\item Low resource consumption.
 \end{itemize}
 
 \newpage
@@ -46,10 +46,10 @@ We propose to build a 32-bit kernel that has the following functionality:
 
 	\item \textbf{Font Rendering} \\
 	With graphics support, the vga text-mode based terminal driver is depreciated in favor of the higher resolution VESA mode.
-	Font rendering needed for this scenario is also available.
+	Font rendering needed for this scenario is also implemented.
 
 	\item \textbf{Image Rendering} \\
-	DaxOs will natively support rendering images in TGA format.
+	DaxOS will natively support rendering images in TGA format.
 \end{enumerate}
 
 \section{Limitations} \label{section:Limitations}
@@ -64,13 +64,16 @@ Some functionality DaxOS does not implement are:
 The bulk of the operating system is written in the C programming language.
 Certain functionality such as writing data to ports and loading tables (IDT, GDT) are implemented using either GCC inline assembly or using normal x86 assembly.
 
+\vspace{0.3cm}
 The project uses the GCC cross-compiler \& binutils to target the generic i686 platform; which is a generic 32-bit Intel P6 architecture.
 The GNU Assembler and Linker are also used. The assembly syntax style used is AT\&T.
 
+\vspace{0.3cm}
 The entire compilation process is driven using GNU Make which uses Makefiles to build the project.
 The compilation is initiated using BASH shell scripts.
 The kernel is tested using the qemu-i386 emulator and is developed on a stable Xubuntu distribution. 
 
+\pagebreak
 DAX OS uses git as its version control system of choice.
 The git repository is uploaded on Github and every new feature is developed on its own separate branch.
 Team communication and coordination are actualized using discord with Github integration enabled.

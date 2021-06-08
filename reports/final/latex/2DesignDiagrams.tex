@@ -26,9 +26,9 @@
 		Using VGA to print text to the screen is quite simple and is achieved by using
 		VGA text-mode. The user can directly write to the video memory located at
 		address 0xB8000. Each character that is to be printed requires a two-byte
-		representation:
-		1 byte, called the code-point is used to represent the character in ASCII.
-		1 byte, is used to set the background and foreground colors. There are 16
+		representation:\\
+		One byte, called the code-point is used to represent the character in ASCII.\\
+		The other is used to set the background and foreground colors. There are 16
 		colors that can be used.
 		In VGA text-mode a maximum of 80x25 characters can be printed on the
 		screen at a time.
@@ -106,6 +106,7 @@ wrapper around the kernels memory manager.
 	mkrescue program. This iso file can be loaded into any emulator to run the operating
 	system. The iso files are built into the isodir directory.
 	
+	\vspace{0.3cm}	
 	The \textbf{clean.sh} script removes all the build artifacts from the compilation. Build artifacts
 	are files that are produced by the compilation process that can always be
 	reproduced by the compiler. Since it can be reproduced it is usually removed to

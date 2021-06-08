@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  5 JUN 2021 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2020.12.2)  7 JUN 2021 17:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -766,7 +766,7 @@ Package: etoolbox 2020/07/15 v2.5i e-TeX tools for LaTeX (JAW)
 \tcb@out=\write5
 \tcb@record@out=\write6
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
@@ -787,26 +787,26 @@ File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
 LaTeX Warning: Label `section:Overview' multiply defined.
 
 ) (output/Interrupts.aux) (output/Keyboard.aux) (output/UnitTesting.aux)
-(output/CLibrary.aux) (output/MemoryManagement.aux) (output/4Conclusion.aux)
-(output/References.aux))
+(output/CLibrary.aux) (output/MemoryManagement.aux) (output/CPUExceptions.aux)
+(output/GraphicsSupport.aux) (output/4Conclusion.aux) (output/References.aux))
 \openout1 = `"project template.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -872,7 +872,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring ON on input line 70.
+Package hyperref Info: Link coloring ON on input line 71.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -884,9 +884,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count324
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
 
 (output/project template.out) (output/project template.out)
 \@outlinefile=\write7
@@ -898,7 +898,7 @@ ABD: EveryShipout initializing macros
 \openout2 = `Thesis_cover_outside.aux'.
 
  (./Thesis_cover_outside.tex
-<mbcetlogo-eps-converted-to.pdf, id=182, 479.7925pt x 446.66875pt>
+<mbcetlogo-eps-converted-to.pdf, id=211, 479.7925pt x 446.66875pt>
 File: mbcetlogo-eps-converted-to.pdf Graphic file (type pdf)
 <use mbcetlogo-eps-converted-to.pdf>
 Package pdftex.def Info: mbcetlogo-eps-converted-to.pdf  used on input line 43.
@@ -938,7 +938,7 @@ Overfull \hbox (17.62482pt too wide) in paragraph at lines 41--45
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.80 \include{Thesis_certificate}
+l.81 \include{Thesis_certificate}
                                   [1
 
 
@@ -959,22 +959,22 @@ l.80 \include{Thesis_certificate}
 ] (output/project template.toc [3
 
 
-])
+] [4])
 \tf@toc=\write8
 \openout8 = `"project template.toc"'.
 
- [4]
+ [5]
 (output/project template.lof)
 \tf@lof=\write9
 \openout9 = `"project template.lof"'.
 
- [5
+ [6
 
 
 ]
 \openout2 = `0Nomenclature.aux'.
 
- (./0Nomenclature.tex) [6
+ (./0Nomenclature.tex) [7
 
 
 ]
@@ -999,17 +999,17 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2]) [3]
+[2] [3]) [4]
 \openout2 = `2DesignDiagrams.aux'.
 
  (./2DesignDiagrams.tex
 Chapter 2.
-[4
+[5
 
 
 
 ]
-<./diagrams/use-case.png, id=324, 643.40375pt x 303.1325pt>
+<./diagrams/use-case.png, id=372, 643.40375pt x 303.1325pt>
 File: ./diagrams/use-case.png Graphic file (type png)
 <use ./diagrams/use-case.png>
 Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
@@ -1018,31 +1018,31 @@ Package pdftex.def Info: ./diagrams/use-case.png  used on input line 65.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6 <./diagrams/use-case.png>] [7]
-<./diagrams/activity.png, id=347, 639.38875pt x 466.74374pt>
+[6] [7 <./diagrams/use-case.png>] [8]
+<./diagrams/activity.png, id=394, 639.38875pt x 466.74374pt>
 File: ./diagrams/activity.png Graphic file (type png)
 <use ./diagrams/activity.png>
-Package pdftex.def Info: ./diagrams/activity.png  used on input line 140.
+Package pdftex.def Info: ./diagrams/activity.png  used on input line 141.
 (pdftex.def)             Requested size: 434.90543pt x 317.47412pt.
- [8 <./diagrams/activity.png>]
-<./diagrams/kbd_driver.png, id=353, 534.99875pt x 362.35374pt>
+ [9 <./diagrams/activity.png>]
+<./diagrams/kbd_driver.png, id=400, 534.99875pt x 362.35374pt>
 File: ./diagrams/kbd_driver.png Graphic file (type png)
 <use ./diagrams/kbd_driver.png>
-Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 178.
+Package pdftex.def Info: ./diagrams/kbd_driver.png  used on input line 179.
 (pdftex.def)             Requested size: 434.92215pt x 294.57204pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9
+[10
 
-] [10 <./diagrams/kbd_driver.png>]
-<./diagrams/user_command.png, id=371, 534.99875pt x 302.12875pt>
+] [11 <./diagrams/kbd_driver.png>]
+<./diagrams/user_command.png, id=419, 534.99875pt x 302.12875pt>
 File: ./diagrams/user_command.png Graphic file (type png)
 <use ./diagrams/user_command.png>
-Package pdftex.def Info: ./diagrams/user_command.png  used on input line 186.
+Package pdftex.def Info: ./diagrams/user_command.png  used on input line 187.
 (pdftex.def)             Requested size: 434.92215pt x 245.61269pt.
-) [11
+) [12
 
  <./diagrams/user_command.png>]
 \openout2 = `3BuildProcess.aux'.
@@ -1050,7 +1050,7 @@ Package pdftex.def Info: ./diagrams/user_command.png  used on input line 186.
 
 (./3BuildProcess.tex
 Chapter 3.
-[12
+[13
 
 
 
@@ -1059,7 +1059,7 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 39.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [13] [14]
+) [14] [15]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -1073,12 +1073,12 @@ Overfull \hbox (48.97096pt too wide) in paragraph at lines 113--113
 [] 
  []
 
-) [15]
+) [16]
 \openout2 = `VGADisplay.aux'.
 
  (./VGADisplay.tex
 Chapter 4.
-[16
+[17
 
 
 
@@ -1093,53 +1093,53 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-<./diagrams/vga_code.png, id=436, 1110.0672pt x 100.2144pt>
+<./diagrams/vga_code.png, id=484, 1110.0672pt x 100.2144pt>
 File: ./diagrams/vga_code.png Graphic file (type png)
 <use ./diagrams/vga_code.png>
 Package pdftex.def Info: ./diagrams/vga_code.png  used on input line 49.
 (pdftex.def)             Requested size: 434.88931pt x 39.26083pt.
- [17 <./diagrams/vga_code.png (PNG copy)>]
-<./diagrams/vga.png, id=448, 741.0084pt x 336.2964pt>
+ [18 <./diagrams/vga_code.png (PNG copy)>]
+<./diagrams/vga.png, id=495, 741.0084pt x 336.2964pt>
 File: ./diagrams/vga.png Graphic file (type png)
 <use ./diagrams/vga.png>
 Package pdftex.def Info: ./diagrams/vga.png  used on input line 69.
 (pdftex.def)             Requested size: 434.89587pt x 197.37146pt.
-) [18 <./diagrams/vga.png (PNG copy)>]
+) [19 <./diagrams/vga.png (PNG copy)>]
 \openout2 = `Interrupts.aux'.
 
 
 (./Interrupts.tex
 Chapter 5.
-[19
+[20
 
 
 
-] [20]
+] [21]
 Underfull \hbox (badness 10000) in paragraph at lines 64--67
 
  []
 
-[21]) [22]
+[22]) [23]
 \openout2 = `Keyboard.aux'.
 
  (./Keyboard.tex
 Chapter 6.
-[23
+[24
 
 
 
 ]
-<./diagrams/kbd_port.png, id=543, 347.2975pt x 135.50626pt>
+<./diagrams/kbd_port.png, id=590, 347.2975pt x 135.50626pt>
 File: ./diagrams/kbd_port.png Graphic file (type png)
 <use ./diagrams/kbd_port.png>
 Package pdftex.def Info: ./diagrams/kbd_port.png  used on input line 45.
 (pdftex.def)             Requested size: 200.75436pt x 78.32901pt.
-<./diagrams/kbd_status.png, id=544, 1138.2525pt x 488.82625pt>
+<./diagrams/kbd_status.png, id=591, 1138.2525pt x 488.82625pt>
 File: ./diagrams/kbd_status.png Graphic file (type png)
 <use ./diagrams/kbd_status.png>
 Package pdftex.def Info: ./diagrams/kbd_status.png  used on input line 52.
 (pdftex.def)             Requested size: 351.30885pt x 150.87073pt.
- [24 <./diagrams/kbd_port.png> <./diagrams/kbd_status.png>]
+ [25 <./diagrams/kbd_port.png> <./diagrams/kbd_status.png>]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 8
 2.
 
@@ -1148,7 +1148,7 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
-) [25]
+) [26]
 \openout2 = `UnitTesting.aux'.
 
 
@@ -1160,25 +1160,25 @@ Overfull \hbox (0.67198pt too wide) in paragraph at lines 19--22
 frame-work called \OT1/cmr/bx/n/12 DUnit\OT1/cmr/m/n/12 .
  []
 
-[26
+[27
 
 
 
-]) [27]
+]) [28]
 \openout2 = `CLibrary.aux'.
 
  (./CLibrary.tex
 Chapter 8.
-[28
+[29
 
 
 
-]) [29]
+]) [30]
 \openout2 = `MemoryManagement.aux'.
 
  (./MemoryManagement.tex
 Chapter 9.
-[30
+[31
 
 
 
@@ -1187,47 +1187,88 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--25
 
  []
 
-[31] [32]) [33]
+<./diagrams/mem_arch.png, id=657, 1037.8775pt x 618.31pt>
+File: ./diagrams/mem_arch.png Graphic file (type png)
+<use ./diagrams/mem_arch.png>
+Package pdftex.def Info: ./diagrams/mem_arch.png  used on input line 53.
+(pdftex.def)             Requested size: 434.90787pt x 259.09404pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[32] [33 <./diagrams/mem_arch.png>] [34
+
+]) [35]
+\openout2 = `CPUExceptions.aux'.
+
+ (./CPUExceptions.tex
+Chapter 10.
+[36
+
+
+
+]) [37]
+\openout2 = `GraphicsSupport.aux'.
+
+ (./GraphicsSupport.tex
+Chapter 11.
+[38
+
+
+
+] [39]
+<./diagrams/image.png, id=731, 1850.112pt x 1039.7244pt>
+File: ./diagrams/image.png Graphic file (type png)
+<use ./diagrams/image.png>
+Package pdftex.def Info: ./diagrams/image.png  used on input line 90.
+(pdftex.def)             Requested size: 434.88931pt x 244.39873pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[40] [41 <./diagrams/image.png (PNG copy)>])
 \openout2 = `4Conclusion.aux'.
 
  (./4Conclusion.tex
-Chapter 10.
-) [34
+Chapter 12.
+) [42
+
 
 
 
 ]
 \openout2 = `References.aux'.
 
- (./References.tex) [35
+ (./References.tex) [43
 
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 133.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 133.
  (output/project template.aux
 (output/Thesis_cover_outside.aux) (output/Thesis_certificate.aux)
 (output/0Acknowledgment.aux) (output/0Abstract.aux) (output/0Nomenclature.aux)
 (output/1Introduction.aux) (output/2DesignDiagrams.aux)
 (output/3BuildProcess.aux) (output/VGADisplay.aux) (output/Interrupts.aux)
 (output/Keyboard.aux) (output/UnitTesting.aux) (output/CLibrary.aux)
-(output/MemoryManagement.aux) (output/4Conclusion.aux) (output/References.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
+(output/MemoryManagement.aux) (output/CPUExceptions.aux)
+(output/GraphicsSupport.aux) (output/4Conclusion.aux) (output/References.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 133.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 133.
 Package rerunfilecheck Info: File `"project template".out' has not changed.
-(rerunfilecheck)             Checksum: 8EC0CEC7ED64635B0D9326AEBA2803FE;2685.
+(rerunfilecheck)             Checksum: C2B6486B37C056D5E24737E900FD25B4;3119.
+
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 130.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 133.
  ) 
 Here is how much of TeX's memory you used:
- 22510 strings out of 482854
- 400884 string characters out of 5956881
- 878264 words of memory out of 5000000
- 37001 multiletter control sequences out of 15000+600000
+ 22670 strings out of 482854
+ 403195 string characters out of 5956881
+ 889941 words of memory out of 5000000
+ 37090 multiletter control sequences out of 15000+600000
  545995 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  63i,11n,97p,973b,1431s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1247,10 +1288,10 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmtt12.pfb>
-Output written on "output/project template.pdf" (43 pages, 482572 bytes).
+Output written on "output/project template.pdf" (52 pages, 685277 bytes).
 PDF statistics:
- 775 PDF objects out of 1000 (max. 8388607)
- 690 compressed objects within 7 object streams
- 287 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 808 compressed objects within 9 object streams
+ 344 named destinations out of 1000 (max. 500000)
+ 476 words of extra memory for PDF output out of 10000 (max. 10000000)
 
